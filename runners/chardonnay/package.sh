@@ -3,6 +3,7 @@
 # -------------------------------------------------------
 # package.sh
 # This script combine winebuild_32 and winebuild_64 files
+# and create a new redistributable package
 # -------------------------------------------------------
 
 # Utilities
@@ -33,3 +34,12 @@ function print_execution {
 title "Merging wine builds"
 print_execution "cd ~/runner/work/wine/wine"
 print_execution "rsync -avh winebuild_64/* winebuild"
+
+# Package Wine build
+# ---------------------------------------
+title "Package Wine build"
+print_execution "cd ~/runner/work/wine/wine"
+# TODO:
+# - get source version
+# - set archive_name `chardonnay-x.x-x86_64.zip
+# -zip -r archive_name winebuild
