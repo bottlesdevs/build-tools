@@ -31,13 +31,9 @@ function print_execution {
 # Preparing directories
 # ---------------------------------------
 title "Preparing directories"
-# print_execution "mkdir -p ~/runner/work/wine/winebuild_32"
-print_execution "mkdir -p ~/runner/work/wine/winebuild_64"
-print_execution "mkdir -p ~/runner/work/wine/winebuild_combo"
-# print_execution "mkdir -p ~/runner/work/wine/winesource_32"
-print_execution "mkdir -p ~/runner/work/wine/winesource_64"
-# print_execution "cp -a ~/runner/work/wine/wine ~/runner/work/wine/winesource_32"
-print_execution "cp -a ~/runner/work/wine/wine ~/runner/work/wine/winesource_64"
+print_execution "mkdir -p ~/runner/work/wine/wine/winebuild"
+print_execution "mkdir -p ~/runner/work/wine/wine/wine_32_source"
+print_execution "mkdir -p ~/runner/work/wine/wine/wine_64_source"
 
 # Enabling i386 architecture
 # ---------------------------------------
