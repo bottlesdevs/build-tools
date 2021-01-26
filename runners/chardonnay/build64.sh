@@ -31,12 +31,11 @@ function print_execution {
 # Configuring Wine 64
 # ---------------------------------------
 title "Configuring Wine 64"
-print_execution "cd ~/runner/work/wine/winesource_64"
-print_execution "./configure --prefix=~/runner/work/wine/winebuild_64"
+print_execution "cd ~/runner/work/wine/wine/wine_64_source"
+print_execution "../configure CFLAGS='-march=native -O3 -pipe -fstack-protector-strong' --enable-win64"
 
 # Building Wine 64
 # ---------------------------------------
 title "Building Wine 64"
-print_execution "cd ~/runner/work/wine/winesource_64"
+print_execution "cd ~/runner/work/wine/wine/wine_64_source"
 print_execution "make -j$(nproc)"
-print_execution "make install"
