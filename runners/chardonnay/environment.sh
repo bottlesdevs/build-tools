@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# ---------------------------------------
+# environment.sh
+# This script configure the build environment
+# ---------------------------------------
+
 # Utilities
 # ---------------------------------------
 expand_bg="\e[K"
