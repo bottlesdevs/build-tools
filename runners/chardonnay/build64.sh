@@ -34,7 +34,7 @@ title "Configuring Wine 64"
 print_execution "cd ~/runner/work/wine/wine/wine_64_source"
 print_execution "../configure CFLAGS='-march=native -O3 -pipe -fstack-protector-strong' \
 --enable-win64  \
---prefix=~/runner/work/wine/wine/winebuild64"
+--prefix=~/runner/work/wine/wine/winebuild_64"
 
 # Building Wine 64
 # ---------------------------------------
