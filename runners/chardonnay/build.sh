@@ -2,7 +2,7 @@
 
 # --------------------------------------------------
 # build.sh
-# This script build wine for 64bit with 32bit tools
+# This script build wine for 64bit with 32bit support
 # --------------------------------------------------
 
 # Utilities
@@ -34,8 +34,8 @@ title "Configuring Wine"
 print_execution "cd ~/runner/work/wine/wine"
 print_execution "./configure \
   --with-wine64=~/runner/work/wine/winesource_64 \
-  --with-wine-tools=~/runner/work/wine/winesource_32 \
   --prefix=~/runner/work/wine/winebuild_combo"
+# --with-wine-tools=~/runner/work/wine/winesource_32
 
 # Building Wine
 # ---------------------------------------
