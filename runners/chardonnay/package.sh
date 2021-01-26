@@ -42,4 +42,4 @@ print_execution "cd ~/runner/work/wine/wine"
 # TODO:
 # - get source version
 # - set archive_name `chardonnay-x.x-x86_64.zip
-# -zip -r archive_name winebuild
+# - zip -r archive_name winebuild
