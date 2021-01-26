@@ -18,6 +18,7 @@ cd build-tools
 ## Steps
 - `./environment.sh`
 - `./patch-staging.sh`
+- `./wine-tools.sh`
 - `./build64.sh`
 - `./build.sh`
 
