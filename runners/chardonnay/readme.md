@@ -20,3 +20,6 @@ cd build-tools
 - `./patch-staging.sh`
 - `./build64.sh`
 - `./build.sh`
+
+## Notes
+The `build32.sh` script build a 32 Bit only wine.
