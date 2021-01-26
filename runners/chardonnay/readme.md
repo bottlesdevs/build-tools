@@ -3,6 +3,12 @@
 ## System requirements
 - Ubuntu LTS
 
+## Preparation
+```bash
+mkdir -p ~/runner/work/wine && cd ~/runner/work/wine
+git clone https://github.com/bottlesdevs/wine
+```
+
 ## Steps
 - `./environment.sh`
 - `./build32.sh`
