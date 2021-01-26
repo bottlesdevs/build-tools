@@ -11,6 +11,7 @@ git clone https://github.com/bottlesdevs/wine
 
 ## Steps
 - `./environment.sh`
+- `./patch-staging.sh`
 - `./build32.sh`
 - `./build64.sh`
 - `./build.sh`
