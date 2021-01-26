@@ -1,4 +1,5 @@
 # Chardonnay build
+Chardonnay is a Wine build that supports both 64 and 32 Bit and includes Staging patches.
 
 ## System requirements
 - Ubuntu LTS
