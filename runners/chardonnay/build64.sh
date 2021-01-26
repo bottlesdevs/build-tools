@@ -32,7 +32,7 @@ function print_execution {
 # ---------------------------------------
 title "Configuring Wine 64"
 print_execution "cd ~/runner/work/wine/winesource_64"
-print_execution "./configure --prefix=/home/runner/work/winebuild_64"
+print_execution "./configure --prefix=~/runner/work/wine/winebuild_64"
 
 # Building Wine 64
 # ---------------------------------------
