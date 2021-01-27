@@ -31,11 +31,11 @@ function print_execution {
 # Preparing directories
 # ---------------------------------------
 title "Preparing directories"
-print_execution "mkdir -p ~/runner/work/wine/wine/winebuild"
-print_execution "mkdir -p ~/runner/work/wine/wine/winebuild_64"
-print_execution "mkdir -p ~/runner/work/wine/wine/wine_tools"
-print_execution "mkdir -p ~/runner/work/wine/wine/wine_32_source"
-print_execution "mkdir -p ~/runner/work/wine/wine/wine_64_source"
+print_execution "mkdir -p $HOME/runner/work/wine/wine/winebuild"
+print_execution "mkdir -p $HOME/runner/work/wine/wine/winebuild_64"
+print_execution "mkdir -p $HOME/runner/work/wine/wine/wine_tools"
+print_execution "mkdir -p $HOME/runner/work/wine/wine/wine_32_source"
+print_execution "mkdir -p $HOME/runner/work/wine/wine/wine_64_source"
 
 # Enabling i386 architecture
 # ---------------------------------------
