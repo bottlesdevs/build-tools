@@ -31,11 +31,11 @@ function print_execution {
 # Fetching Wine Staging
 # ---------------------------------------
 title "Fetching Wine Staging"
-print_execution "cd ~/runner/work"
+print_execution "cd $HOME/runner/work"
 print_execution "git clone https://github.com/wine-staging/wine-staging.git"
 
 # Applying Wine Staging
 # ---------------------------------------
 title "Applying Wine Staging"
-print_execution "cd ~/runner/work/wine-staging/staging
-print_execution "./patchinstall.py -d ~/runner/work/wine/wine -a"
+print_execution "cd $HOME/runner/work/wine-staging/staging
+print_execution "./patchinstall.py -d $HOME/runner/work/wine/wine -a"
