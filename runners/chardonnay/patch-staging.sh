@@ -37,5 +37,5 @@ print_execution "git clone https://github.com/wine-staging/wine-staging.git"
 # Applying Wine Staging
 # ---------------------------------------
 title "Applying Wine Staging"
-print_execution "cd $HOME/runner/work/wine-staging/staging
+print_execution "cd $HOME/runner/work/wine-staging/staging"
 print_execution "./patchinstall.py -d $HOME/runner/work/wine/wine -a"
