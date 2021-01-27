@@ -14,6 +14,15 @@ black="\e[30m"
 bold="\e[1m"
 reset="\e[0m"
 
+while getopts r: option
+do
+	case "${option}" in
+		r) release=${OPTARG};;
+	esac
+done
+
+echo $release
+
 function title {
 	PREFIX="\n$bold-----"
 	SUFFIX="--$reset"
@@ -32,7 +41,18 @@ function print_execution {
 # ---------------------------------------
 title "Fetching Wine Staging"
 print_execution "cd $HOME/work"
-print_execution "git clone https://github.com/wine-staging/wine-staging.git"
+
+if [[ -z ${release+x} ]]
+then
+	print_execution "echo No release declared, fallback on git"
+	print_execution "git clone https://github.com/wine-staging/wine-staging.git"
+else
+	print_execution "echo Requested the $release release"
+	print_execution "wget -O wine-staging.tar.gz https://github.com/wine-staging/wine-staging/archive/v$release.tar.gz"
+	print_execution "tar zxvf wine-staging.tar.gz"
+	print_execution "rm wine-staging.tar.gz"
+	print_execution "mv wine-staging-$release wine-staging"
+fi
 
 # Applying Wine Staging
 # ---------------------------------------
