@@ -32,13 +32,13 @@ function print_execution {
 # Merge Wine builds
 # ---------------------------------------
 title "Merging wine builds"
-print_execution "cd $HOME/runner/work/wine/wine"
+print_execution "cd $HOME/work/wine/wine"
 print_execution "rsync -avh winebuild_64/* winebuild"
 
 # Determining the Wine version
 # ---------------------------------------
 title "Determining the Wine version"
-print_execution "cd $HOME/runner/work/wine/wine"
+print_execution "cd $HOME/work/wine/wine"
 wine_version=$(cat VERSION)
 wine_version=${wine_version:13}
 print_execution "echo Wine version is: $wine_version}"
@@ -46,7 +46,7 @@ print_execution "echo Wine version is: $wine_version}"
 # Package Wine build
 # ---------------------------------------
 title "Package Wine build"
-print_execution "cd $HOME/runner/work/wine/wine/winebuild"
+print_execution "cd $HOME/work/wine/wine/winebuild"
 archive_name="chardonnay-${wine_version}-x86_64.zip"
 print_execution "zip -r ${archive_name} *"
 print_execution "mv chardonnay-${wine_version}-x86_64.zip ../chardonnay-${wine_version}-x86_64.zip"
