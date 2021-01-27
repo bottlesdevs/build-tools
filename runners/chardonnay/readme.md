@@ -17,7 +17,7 @@ cd build-tools
 
 ## Steps
 - `./environment.sh`
-- `./patch-staging.sh`
+- `./patch-staging.sh -r [version] (e.g. -r 6.0)`
 - `./build-tools.sh`
 - `./build64.sh`
 - `./build32.sh`
