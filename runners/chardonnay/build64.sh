@@ -32,7 +32,7 @@ function print_execution {
 # ---------------------------------------
 title "Configuring Wine 64"
 print_execution "cd $HOME/runner/work/wine/wine/wine_64_source"
-print_execution "../configure CFLAGS='-march=native -O3 -pipe -fstack-protector-strong' \
+print_execution "../configure $(CFLAGS="-march=native -O3 -pipe -fstack-protector-strong") \
 --enable-win64  \
 --prefix=$HOME/runner/work/wine/wine/winebuild_64"
 
