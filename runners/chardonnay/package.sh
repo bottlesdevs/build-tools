@@ -35,11 +35,17 @@ title "Merging wine builds"
 print_execution "cd ~/runner/work/wine/wine"
 print_execution "rsync -avh winebuild_64/* winebuild"
 
+# Determining the Wine version
+# ---------------------------------------
+title "Determining the Wine version"
+print_execution "cd ~/runner/work/wine/wine"
+wine_version=$(cat VERSION)
+wine_version=${wine_version:13}
+print_execution "Wine version is: ${wine_version}"
+
 # Package Wine build
 # ---------------------------------------
 title "Package Wine build"
 print_execution "cd ~/runner/work/wine/wine"
-# TODO:
-# - get source version
-# - set archive_name `chardonnay-x.x-x86_64.zip
-# - zip -r archive_name winebuild
+archive_name="chardonnay-${wine_version}-x86_64.zip"
+print_execution "zip -r ${archive_name} winebuild"
