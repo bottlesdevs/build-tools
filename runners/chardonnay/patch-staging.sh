@@ -37,5 +37,5 @@ print_execution "git clone https://github.com/wine-staging/wine-staging.git"
 # Applying Wine Staging
 # ---------------------------------------
 title "Applying Wine Staging"
-print_execution "cd $HOME/work/wine-staging/staging"
-print_execution "./patchinstall.py DESTDIR=$HOME/work/wine/wine --all"
+print_execution "cd $HOME/work/wine-staging/patches"
+print_execution "./patchinstall.sh DESTDIR=$HOME/work/wine/wine --all"
