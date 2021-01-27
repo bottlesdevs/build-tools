@@ -41,7 +41,7 @@ title "Determining the Wine version"
 print_execution "cd $HOME/runner/work/wine/wine"
 wine_version=$(cat VERSION)
 wine_version=${wine_version:13}
-print_execution "Wine version is: ${wine_version}"
+print_execution "echo Wine version is: $wine_version}"
 
 # Package Wine build
 # ---------------------------------------
