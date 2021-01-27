@@ -31,15 +31,15 @@ function print_execution {
 # Configuring Wine 32
 # ---------------------------------------
 title "Configuring Wine 32"
-print_execution "cd $HOME/runner/work/wine/wine/wine_32_source"
+print_execution "cd $HOME/work/wine/wine/wine_32_source"
 print_execution "../configure $(CFLAGS="-march=native -O3 -pipe -fstack-protector-strong") \
---with-wine64=$HOME/runner/work/wine/wine/wine_64_source \
---with-wine-tools=$HOME/runner/work/wine/wine/wine_tools \
---prefix=$HOME/runner/work/wine/wine/winebuild"
+--with-wine64=$HOME/work/wine/wine/wine_64_source \
+--with-wine-tools=$HOME/work/wine/wine/wine_tools \
+--prefix=$HOME/work/wine/wine/winebuild"
 
 # Building Wine 32
 # ---------------------------------------
 title "Building Wine 32"
-print_execution "cd $HOME/runner/work/wine/wine/wine_32_source"
+print_execution "cd $HOME/work/wine/wine/wine_32_source"
 print_execution "make -j$(nproc)"
 print_execution "make install"
