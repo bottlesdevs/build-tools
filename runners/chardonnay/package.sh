@@ -46,6 +46,7 @@ print_execution "echo Wine version is: $wine_version}"
 # Package Wine build
 # ---------------------------------------
 title "Package Wine build"
-print_execution "cd $HOME/runner/work/wine/wine"
+print_execution "cd $HOME/runner/work/wine/wine/winebuild"
 archive_name="chardonnay-${wine_version}-x86_64.zip"
-print_execution "zip -r ${archive_name} winebuild/*"
+print_execution "zip -r ${archive_name} *"
+print_execution "cd .. && ls chardonnay*.zip"
