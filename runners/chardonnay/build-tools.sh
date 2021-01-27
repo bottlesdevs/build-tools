@@ -31,7 +31,7 @@ function print_execution {
 # Configuring Wine Tools
 # ---------------------------------------
 title "Configuring Wine Tools"
-print_execution "cd ~/runner/work/wine/wine/wine_tools"
+print_execution "cd $HOME/runner/work/wine/wine/wine_tools"
 print_execution "../configure"
 
 # Building Wine Tools
