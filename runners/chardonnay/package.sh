@@ -15,6 +15,13 @@ black="\e[30m"
 bold="\e[1m"
 reset="\e[0m"
 
+while getopts s: option
+do
+	case "${option}" in
+		s) suffix=${OPTARG};;
+	esac
+done
+
 function title {
 	PREFIX="\n$bold-----"
 	SUFFIX="--$reset"
@@ -41,7 +48,7 @@ title "Determining the Wine version"
 print_execution "cd $HOME/work/wine/wine"
 wine_version=$(cat VERSION)
 wine_version=${wine_version:13}
-print_execution "echo Wine version is: $wine_version}"
+print_execution "echo Wine version is: $wine_version"
 
 # Package Wine build
 # ---------------------------------------
@@ -49,6 +56,11 @@ title "Package Wine build"
 print_execution "cd $HOME/work/wine/wine/winebuild"
 archive_name="chardonnay-${wine_version}-x86_64.tar.gz"
 print_execution "tar -czf ${archive_name} *"
-print_execution "mv chardonnay-${wine_version}-x86_64.tar.gz ../chardonnay-${wine_version}-x86_64.tar.gz"
+if [[ -z ${suffix+x} ]]
+then
+	print_execution "mv chardonnay-${wine_version}-x86_64.tar.gz ../chardonnay-${wine_version}-x86_64.tar.gz"
+else
+	print_execution "mv chardonnay-${wine_version}-x86_64.tar.gz ../chardonnay-${wine_version}-${suffix}-x86_64.tar.gz"
+fi
 print_execution "cd ../"
-print_execution "ls chardonnay*.zip"
+print_execution "ls chardonnay*.tar.gz"
