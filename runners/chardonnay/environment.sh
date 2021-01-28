@@ -50,6 +50,11 @@ print_execution "sudo add-apt-repository ppa:cybermax-dexter/vkd3d -y"
 print_execution "sudo add-apt-repository ppa:cybermax-dexter/sdl2-backport -y"
 print_execution "sudo apt-get -qq update"
 
+# Installing wine development dependencies
+# ---------------------------------------
+title "Installing wine development dependencies"
+print_execution "sudo apt-get build-dep wine-development"
+
 # Installing i386 dependencies
 # ---------------------------------------
 title "Installing i386 dependencies"
