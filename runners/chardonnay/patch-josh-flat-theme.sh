@@ -45,4 +45,4 @@ print_execution "wget https://raw.githubusercontent.com/Frogging-Family/wine-tkg
 # ---------------------------------------
 title "Applying josh flat theme patch"
 print_execution "cd $HOME/work/wine/wine"
-print_execution "patch -p1 < ../extra/josh-flat-theme.patch"
+patch -p1 < ../extra/josh-flat-theme.patch
