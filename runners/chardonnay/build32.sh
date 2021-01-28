@@ -36,7 +36,8 @@ print_execution "cd $HOME/work/wine/wine/wine_32_source"
 print_execution "../configure $(CFLAGS="-march=native -O3 -pipe -fstack-protector-strong") \
 --with-wine64=$HOME/work/wine/wine/wine_64_source \
 --with-wine-tools=$HOME/work/wine/wine/wine_tools \
---prefix=$HOME/work/wine/wine/winebuild"
+--prefix=$HOME/work/wine/wine/winebuild \
+--with-mingw"
 
 # Building Wine 32
 # ---------------------------------------
