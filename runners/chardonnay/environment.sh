@@ -36,6 +36,7 @@ print_execution "mkdir -p $HOME/work/wine/wine/winebuild_64"
 print_execution "mkdir -p $HOME/work/wine/wine/wine_tools"
 print_execution "mkdir -p $HOME/work/wine/wine/wine_32_source"
 print_execution "mkdir -p $HOME/work/wine/wine/wine_64_source"
+print_execution "mkdir -p $HOME/work/wine/extra"
 
 # Enabling i386 architecture
 # ---------------------------------------
