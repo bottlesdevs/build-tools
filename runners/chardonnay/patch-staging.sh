@@ -21,8 +21,6 @@ do
 	esac
 done
 
-echo $release
-
 function title {
 	PREFIX="\n$bold-----"
 	SUFFIX="--$reset"
