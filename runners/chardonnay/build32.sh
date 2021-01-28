@@ -31,6 +31,7 @@ function print_execution {
 # Configuring Wine 32
 # ---------------------------------------
 title "Configuring Wine 32"
+print_execution "export CROSSCC='i686-w64-mingw32-gcc'"
 print_execution "cd $HOME/work/wine/wine/wine_32_source"
 print_execution "../configure $(CFLAGS="-march=native -O3 -pipe -fstack-protector-strong") \
 --with-wine64=$HOME/work/wine/wine/wine_64_source \
