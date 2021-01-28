@@ -17,9 +17,14 @@ cd build-tools
 
 ## Steps
 - `./environment.sh`
-- `./patch-josh-flat-theme.sh`
-- `./patch-staging.sh -r [version] (e.g. -r 6.0)`
+- `./patch-josh-flat-theme.sh` (optional)
+- `./patch-staging.sh -r [version] (e.g. -r 6.0)` (optional)
 - `./build-tools.sh`
 - `./build64.sh`
 - `./build32.sh`
 - `./package.sh`
+
+## Chardonnay recipe
+The chardonnay runner is a 64bit build with 32bit compatibility and the following patches:
+- josh flat theme patch
+- staging patch
