@@ -61,7 +61,7 @@ libxslt1-dev:i386 libxt-dev:i386 libcolord2:i386 libvulkan-dev:i386 libgnutls28-
 libgstreamer-plugins-base1.0-dev:i386 libgstreamer1.0-dev:i386 libpng-dev:i386 libsdl2-dev:i386 libavcodec-dev:i386 \
 libavutil-dev:i386 libswresample-dev:i386 libavcodec58:i386 libswresample3:i386 libavutil56:i386 libfaudio0:i386 \
 libfaudio-dev:i386 libvkd3d-dev:i386 libvkd3d-utils1:i386 libvulkan1:i386 libgstreamer1.0-0:i386 gstreamer1.0-libav:i386 \
-xserver-xorg-dev:i386 libfreetype6-dev:i386 gcc-multilib g++-multilib"
+xserver-xorg-dev:i386 libfreetype6-dev:i386 gcc-multilib g++-multilib gcc-mingw-w64-i686"
 
 # Installing amd64 dependencies
 # ---------------------------------------
@@ -80,7 +80,7 @@ libavutil-dev libswresample-dev libavcodec58 libswresample3 libavutil56 libfaudi
 libvkd3d1 libvkd3d-dev libvkd3d-utils1 vkd3d-demos libvulkan1 \
 libgstreamer1.0-0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad \
 gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-doc gstreamer1.0-tools gstreamer1.0-x \
-gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-qt5 gstreamer1.0-pulseaudio liborc-0.4-dev"
+gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-qt5 gstreamer1.0-pulseaudio liborc-0.4-dev gcc-mingw-w64"
 
 # Configuring GCC
 # ---------------------------------------
