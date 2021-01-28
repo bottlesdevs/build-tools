@@ -53,9 +53,10 @@ print_execution "echo Wine version is: $wine_version"
 # Package Wine build
 # ---------------------------------------
 title "Package Wine build"
-print_execution "cd $HOME/work/wine/wine/winebuild"
+print_execution "mv $HOME/work/wine/wine/winebuild $HOME/work/wine/wine/chardonnay-${wine_version}-x86_64"
+print_execution "cd $HOME/work/wine/wine/chardonnay-${wine_version}-x86_64"
 archive_name="chardonnay-${wine_version}-x86_64.tar.gz"
-print_execution "tar -czf ${archive_name} *"
+print_execution "tar -czf ${archive_name} chardonnay-${wine_version}-x86_64"
 if [[ -z ${suffix+x} ]]
 then
 	print_execution "mv chardonnay-${wine_version}-x86_64.tar.gz ../chardonnay-${wine_version}-x86_64.tar.gz"
