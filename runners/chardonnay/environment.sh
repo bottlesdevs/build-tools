@@ -52,10 +52,10 @@ print_execution "sudo apt-get -qq update"
 
 # Installing wine development dependencies
 # ---------------------------------------
-title "Installing wine development dependencies"
-print_execution "sed -i '/deb-src/s/^# //' /etc/apt/sources.list"
-print_execution "sudo apt update"
-print_execution "sudo apt-get build-dep wine-development"
+# title "Installing wine development dependencies"
+# print_execution "sed -i '/deb-src/s/^# //' /etc/apt/sources.list"
+# print_execution "sudo apt update"
+# print_execution "sudo apt-get build-dep wine-development"
 
 # Installing i386 dependencies
 # ---------------------------------------
@@ -89,7 +89,7 @@ libvkd3d1 libvkd3d-dev libvkd3d-utils1 vkd3d-demos libvulkan1 \
 libgstreamer1.0-0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad \
 gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-doc gstreamer1.0-tools gstreamer1.0-x \
 gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-qt5 gstreamer1.0-pulseaudio liborc-0.4-dev \
-gcc-mingw-w64 mingw-w64 mingw-w64-common mingw-w64-x86-64-dev  mingw-w64-tools"
+gcc-mingw-w64 mingw-w64 mingw-w64-common mingw-w64-x86-64-dev mingw-w64-tools"
 
 # Configuring GCC
 # ---------------------------------------
