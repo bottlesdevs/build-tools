@@ -53,10 +53,10 @@ print_execution "sudo apt-get -qq update"
 
 # Installing wine development dependencies
 # ---------------------------------------
-# title "Installing wine development dependencies"
-# print_execution "sed -i '/deb-src/s/^# //' /etc/apt/sources.list"
-# print_execution "sudo apt update"
-# print_execution "sudo apt-get build-dep wine-development"
+title "Installing wine development dependencies"
+print_execution "sed -i '/deb-src/s/^# //' /etc/apt/sources.list"
+print_execution "sudo apt update"
+print_execution "sudo apt-get build-dep wine-development"
 
 # Installing i386 dependencies
 # ---------------------------------------
