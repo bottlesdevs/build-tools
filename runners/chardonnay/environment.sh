@@ -64,7 +64,7 @@ title "Installing i386 dependencies"
 print_execution "sudo apt install -o APT::Immediate-Configure=false -y libacl1-dev:i386 libasound2-dev:i386 \
 libcups2-dev:i386 libdbus-1-dev:i386 libgcrypt-dev:i386 libgif-dev:i386 libglu1-mesa-dev:i386 libgsm1-dev:i386 \
 liblcms2-dev:i386 libldap2-dev:i386 libmpg123-dev:i386 libncurses5-dev:i386 libopenal-dev:i386 libosmesa6-dev:i386 \
-libpcap-dev:i386 libpulse-dev:i386 libssl-dev:i386 libtiff5-dev:i386 libudev-dev:i386 libv4l-dev:i386 libva-dev:i386 \
+libpcap-dev:i386 libpulse-dev:i386 libtiff5-dev:i386 libudev-dev:i386 libv4l-dev:i386 libva-dev:i386 \
 libxslt1-dev:i386 libxt-dev:i386 libcolord2:i386 libvulkan-dev:i386 libgnutls28-dev:i386 \
 libgstreamer-plugins-base1.0-dev:i386 libgstreamer1.0-dev:i386 libpng-dev:i386 libsdl2-dev:i386 libavcodec-dev:i386 \
 libavutil-dev:i386 libswresample-dev:i386 libavcodec58:i386 libswresample3:i386 libavutil56:i386 libfaudio0:i386 \
