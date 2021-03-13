@@ -73,7 +73,8 @@ xserver-xorg-dev:i386 libfreetype6-dev:i386 gcc-multilib g++-multilib gcc-mingw-
 mingw-w64-i686-dev libcloog-ppl1:i386 libvkd3d-shader1:i386 libgtk-3-dev:i386 \
 ocl-icd-opencl-dev:i386 linux-libc-dev:i386 libppl14:i386 libvkd3d1:i386 vkd3d-demos:i386 gstreamer1.0-tools:i386 \
 gstreamer1.0-x:i386 gstreamer1.0-alsa:i386 gstreamer1.0-gl:i386 gstreamer1.0-gtk3:i386 gstreamer1.0-qt5:i386 \
-gstreamer1.0-pulseaudio:i386 libcupsimage2-dev:i386 libgdk-pixbuf2.0-dev:i386 libtiff-dev:i386"
+gstreamer1.0-pulseaudio:i386 libcupsimage2-dev:i386 libgdk-pixbuf2.0-dev:i386 libtiff-dev:i386 \
+libqt5gui5:i386 libqt5qml5:i386 libqt5quick5:i386 libqt5x11extras5:i386 libssl1.1:i386"
 
 # Installing amd64 dependencies
 # ---------------------------------------
