@@ -53,13 +53,15 @@ print_execution "echo Wine version is: $wine_version"
 # Package Wine build
 # ---------------------------------------
 title "Package Wine build"
-print_execution "mv $HOME/work/wine/wine/winebuild $HOME/work/wine/wine/chardonnay-${wine_version}-x86_64"
-archive_name="chardonnay-${wine_version}-x86_64.tar.gz"
-print_execution "tar zcvf ${archive_name} chardonnay-${wine_version}-x86_64"
 if [[ -z ${suffix+x} ]]
 then
 	print_execution "echo No suffix defined."
+	print_execution "mv $HOME/work/wine/wine/winebuild $HOME/work/wine/wine/chardonnay-${wine_version}-x86_64"
+	archive_name="chardonnay-${wine_version}-x86_64.tar.gz"
+	print_execution "tar zcvf ${archive_name} chardonnay-${wine_version}-x86_64"
 else
-	print_execution "mv chardonnay-${wine_version}-x86_64.tar.gz chardonnay-${wine_version}-${suffix}-x86_64.tar.gz"
+	print_execution "mv $HOME/work/wine/wine/winebuild $HOME/work/wine/wine/chardonnay-${wine_version}-${suffix}-x86_64"
+	archive_name="chardonnay-${wine_version}-${suffix}-x86_64.tar.gz"
+	print_execution "tar zcvf ${archive_name} chardonnay-${wine_version}-${suffix}-x86_64"
 fi
 print_execution "ls chardonnay*.tar.gz"
