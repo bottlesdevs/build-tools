@@ -102,3 +102,7 @@ gcc-mingw-w64 mingw-w64 mingw-w64-common mingw-w64-x86-64-dev mingw-w64-tools li
 # ---------------------------------------
 title "Configuring GCC"
 if [ "$CXX" = "g++" ]; then export CXX="g++-5" CC="gcc-5"; fi
+
+export LDFLAGS=-m32
+export CXXFLAGS=-m32
+export CFLAGS=-m32
