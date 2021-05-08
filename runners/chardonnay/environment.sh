@@ -67,7 +67,7 @@ liblcms2-dev:i386 libldap2-dev:i386 libmpg123-dev:i386 libncurses5-dev:i386 libo
 libpcap-dev:i386 libpulse-dev:i386 libtiff5-dev:i386 libudev-dev:i386 libv4l-dev:i386 libva-dev:i386 \
 libxslt1-dev:i386 libxt-dev:i386 libcolord2:i386 libvulkan-dev:i386 libgnutls28-dev:i386 \
 libgstreamer-plugins-base1.0-dev:i386 libgstreamer1.0-dev:i386 libpng-dev:i386 libsdl2-dev:i386 libavcodec-dev:i386 \
-libavutil-dev:i386 libswresample-dev:i386 libavcodec58:i386 libswresample3:i386 libavutil56:i386 libfaudio0:i386 \
+libavutil-dev:i386 libswresample-dev:i386 libswresample3:i386 libavutil56:i386 libfaudio0:i386 \
 libfaudio-dev:i386 libvkd3d-dev:i386 libvkd3d-utils1:i386 libvulkan1:i386 libgstreamer1.0-0:i386 gstreamer1.0-libav:i386 \
 xserver-xorg-dev:i386 libfreetype6-dev:i386 gcc-multilib g++-multilib gcc-mingw-w64-i686 \
 mingw-w64-i686-dev libcloog-ppl1:i386 libvkd3d-shader1:i386 libgtk-3-dev:i386 \
@@ -78,11 +78,12 @@ libfontconfig-dev:i386 libjpeg62-dev:i386 libunwind-dev:i386 libxml2-dev:i386 li
 libsane-dev:i386 libkrb5-dev:i386 libusb-dev:i386 libssl-dev:i386 liborc-0.4-dev:i386 \
 \
 libgstreamer-plugins-base1.0-0:i386 libglib2.0-0:i386 libgraphene-1.0-0:i386 libgstreamer-gl1.0-0:i386 \
-libgstreamer-plugins-base1.0-0:i386 libgtk-3-0:i386 libavcodec57:i386 libavcodec-extra57:i386 libavfilter6:i386 \
+libgstreamer-plugins-base1.0-0:i386 libgtk-3-0:i386 libavcodec58:i386 libavcodec-extra58:i386 libavfilter6:i386 \
 libavfilter-extra6:i386 libavformat57:i386 libpango-1.0-0:i386 libpangocairo-1.0-0:i386 librsvg2-2:i386 \
 libgdk-pixbuf2.0-0:i386 gir1.2-gdkpixbuf-2.0:i386 gir1.2-gst-plugins-base-1.0:i386 libatk-bridge2.0-dev:i386 \
 libcairo2-dev:i386 gir1.2-pango-1.0:i386 libharfbuzz-dev:i386 libpangoft2-1.0-0:i386 libpangocairo-1.0-0:i386 \
-libpangoxft-1.0-0:i386 libpulse-mainloop-glib0:i386 libglib2.0-dev:i386 libibus-1.0-dev:i386 libxml2-dev:i386"
+libpangoxft-1.0-0:i386 libpulse-mainloop-glib0:i386 libglib2.0-dev:i386 libibus-1.0-dev:i386 libxml2-dev:i386 \
+libicu-dev:i386 libjpeg-dev:i386 libpcre3-dev:i386 libselinux1:i386 libmount1:i386"
 
 title "APT fix"
 print_execution "sudo apt install -f"
@@ -99,7 +100,7 @@ libopenal-dev libosmesa6-dev libpcap-dev libpulse-dev \
 libssl-dev libtiff5-dev libudev-dev libv4l-dev libva-dev libxslt1-dev libxt-dev \
 ocl-icd-opencl-dev prelink valgrind linux-libc-dev libppl14 libcolord2 libvulkan-dev \
 libgnutls28-dev libgstreamer-plugins-base1.0-dev libgstreamer1.0-dev \
-libpng-dev libsdl2-dev libavcodec-dev libfreetype-dev \
+libpng-dev libsdl2-dev libavcodec-dev \
 libavutil-dev libswresample-dev libavcodec58 libswresample3 libavutil56 libfaudio0 libfaudio-dev \
 libvkd3d1 libvkd3d-dev libvkd3d-utils1 libvkd3d-shader1 vkd3d-demos libvulkan1 \
 libgstreamer1.0-0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad \
