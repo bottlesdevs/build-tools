@@ -75,7 +75,7 @@ ocl-icd-opencl-dev:i386 linux-libc-dev:i386 libppl14:i386 libvkd3d1:i386 vkd3d-d
 gstreamer1.0-x:i386 gstreamer1.0-alsa:i386 gstreamer1.0-gl:i386 gstreamer1.0-gtk3:i386 \
 gstreamer1.0-pulseaudio:i386 libcupsimage2-dev:i386 libgdk-pixbuf2.0-dev:i386 libtiff-dev:i386 libpango1.0-dev:i386 \
 libfontconfig-dev:i386 libjpeg62-dev:i386 libunwind-dev:i386 libxml2-dev:i386 libcapi20-dev:i386 libgphoto2-dev:i386 \
-libsane-dev:i386 libkrb5-dev:i386 libusb-dev:i386 libssl-dev:i386"
+libsane-dev:i386 libkrb5-dev:i386 libusb-dev:i386 libssl-dev:i386 liborc-0.4-dev:i386"
 
 title "APT fix"
 print_execution "sudo apt install -f"
