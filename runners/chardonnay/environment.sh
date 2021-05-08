@@ -73,7 +73,9 @@ xserver-xorg-dev:i386 libfreetype6-dev:i386 gcc-multilib g++-multilib gcc-mingw-
 mingw-w64-i686-dev libcloog-ppl1:i386 libvkd3d-shader1:i386 libgtk-3-dev:i386 \
 ocl-icd-opencl-dev:i386 linux-libc-dev:i386 libppl14:i386 libvkd3d1:i386 vkd3d-demos:i386 gstreamer1.0-tools:i386 \
 gstreamer1.0-x:i386 gstreamer1.0-alsa:i386 gstreamer1.0-gl:i386 gstreamer1.0-gtk3:i386 \
-gstreamer1.0-pulseaudio:i386 libcupsimage2-dev:i386 libgdk-pixbuf2.0-dev:i386 libtiff-dev:i386 libpango1.0-dev:i386"
+gstreamer1.0-pulseaudio:i386 libcupsimage2-dev:i386 libgdk-pixbuf2.0-dev:i386 libtiff-dev:i386 libpango1.0-dev:i386 \
+libfontconfig-dev:i386 libjpeg62-dev:i386 libunwind-dev:i386 libxml2-dev:i386 libcapi20-dev:i386 libgphoto2-dev:i386 \
+libsane-dev:i386 libkrb5-dev:i386 libusb-dev:i386"
 
 title "APT fix"
 print_execution "sudo apt install -f"
@@ -90,13 +92,15 @@ libopenal-dev libosmesa6-dev libpcap-dev libpulse-dev \
 libssl-dev libtiff5-dev libudev-dev libv4l-dev libva-dev libxslt1-dev libxt-dev \
 ocl-icd-opencl-dev prelink valgrind linux-libc-dev libppl14 libcolord2 libvulkan-dev \
 libgnutls28-dev libgstreamer-plugins-base1.0-dev libgstreamer1.0-dev \
-libpng-dev libsdl2-dev libavcodec-dev \
+libpng-dev libsdl2-dev libavcodec-dev libfreetype-dev \
 libavutil-dev libswresample-dev libavcodec58 libswresample3 libavutil56 libfaudio0 libfaudio-dev \
 libvkd3d1 libvkd3d-dev libvkd3d-utils1 libvkd3d-shader1 vkd3d-demos libvulkan1 \
 libgstreamer1.0-0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad \
 gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-doc gstreamer1.0-tools gstreamer1.0-x \
 gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-qt5 gstreamer1.0-pulseaudio liborc-0.4-dev \
-gcc-mingw-w64 mingw-w64 mingw-w64-common mingw-w64-x86-64-dev mingw-w64-tools libcloog-ppl1 libpango1.0-dev"
+gcc-mingw-w64 mingw-w64 mingw-w64-common mingw-w64-x86-64-dev mingw-w64-tools libcloog-ppl1 libpango1.0-dev \
+libfontconfig-dev libjpeg62-dev libunwind-dev libxml2-dev libcapi20-dev libgphoto2-dev libsane-dev libkrb5-dev \
+samba-dev libusb-dev"
 
 # Configuring GCC
 # ---------------------------------------
