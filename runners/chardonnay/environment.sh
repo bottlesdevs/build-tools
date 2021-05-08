@@ -78,12 +78,13 @@ libfontconfig-dev:i386 libjpeg62-dev:i386 libunwind-dev:i386 libxml2-dev:i386 li
 libsane-dev:i386 libkrb5-dev:i386 libusb-dev:i386 libssl-dev:i386 liborc-0.4-dev:i386 \
 \
 libgstreamer-plugins-base1.0-0:i386 libglib2.0-0:i386 libgraphene-1.0-0:i386 libgstreamer-gl1.0-0:i386 \
-libgstreamer-plugins-base1.0-0:i386 libgtk-3-0:i386 libavcodec58:i386 libavcodec-extra58:i386 libavfilter6:i386 \
+libgstreamer-plugins-base1.0-0:i386 libgtk-3-0:i386 libavcodec-extra58:i386 \
 libavfilter-extra6:i386 libavformat57:i386 libpango-1.0-0:i386 libpangocairo-1.0-0:i386 librsvg2-2:i386 \
 libgdk-pixbuf2.0-0:i386 gir1.2-gdkpixbuf-2.0:i386 gir1.2-gst-plugins-base-1.0:i386 libatk-bridge2.0-dev:i386 \
 libcairo2-dev:i386 gir1.2-pango-1.0:i386 libharfbuzz-dev:i386 libpangoft2-1.0-0:i386 libpangocairo-1.0-0:i386 \
 libpangoxft-1.0-0:i386 libpulse-mainloop-glib0:i386 libglib2.0-dev:i386 libibus-1.0-dev:i386 libxml2-dev:i386 \
-libicu-dev:i386 libjpeg-dev:i386 libpcre3-dev:i386 libselinux1:i386 libmount1:i386"
+libicu-dev:i386 libjpeg-dev:i386 libpcre3-dev:i386 libselinux1:i386 libmount1:i386 \
+libpcre3:i386 libpcrecpp0v5:i386"
 
 title "APT fix"
 print_execution "sudo apt install -f"
