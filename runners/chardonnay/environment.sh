@@ -75,7 +75,14 @@ ocl-icd-opencl-dev:i386 linux-libc-dev:i386 libppl14:i386 libvkd3d1:i386 vkd3d-d
 gstreamer1.0-x:i386 gstreamer1.0-alsa:i386 gstreamer1.0-gl:i386 gstreamer1.0-gtk3:i386 \
 gstreamer1.0-pulseaudio:i386 libcupsimage2-dev:i386 libgdk-pixbuf2.0-dev:i386 libtiff-dev:i386 libpango1.0-dev:i386 \
 libfontconfig-dev:i386 libjpeg62-dev:i386 libunwind-dev:i386 libxml2-dev:i386 libcapi20-dev:i386 libgphoto2-dev:i386 \
-libsane-dev:i386 libkrb5-dev:i386 libusb-dev:i386 libssl-dev:i386 liborc-0.4-dev:i386"
+libsane-dev:i386 libkrb5-dev:i386 libusb-dev:i386 libssl-dev:i386 liborc-0.4-dev:i386 \
+\
+libgstreamer-plugins-base1.0-0:i386 libglib2.0-0:i386 libgraphene-1.0-0:i386 libgstreamer-gl1.0-0:i386 \
+libgstreamer-plugins-base1.0-0:i386 libgtk-3-0:i386 libavcodec57:i386 libavcodec-extra57:i386 libavfilter6:i386 \
+libavfilter-extra6:i386 libavformat57:i386 libpango-1.0-0:i386 libpangocairo-1.0-0:i386 librsvg2-2:i386 \
+libgdk-pixbuf2.0-0:i386 gir1.2-gdkpixbuf-2.0:i386 gir1.2-gst-plugins-base-1.0:i386 libatk-bridge2.0-dev:i386 \
+libcairo2-dev:i386 gir1.2-pango-1.0:i386 libharfbuzz-dev:i386 libpangoft2-1.0-0:i386 libpangocairo-1.0-0:i386 \
+libpangoxft-1.0-0:i386 libpulse-mainloop-glib0:i386 libglib2.0-dev:i386 libibus-1.0-dev:i386 libxml2-dev:i386"
 
 title "APT fix"
 print_execution "sudo apt install -f"
