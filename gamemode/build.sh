@@ -50,7 +50,6 @@ else
 	print_execution "tar zxvf gamemode.tar.gz"
 	print_execution "rm gamemode.tar.gz"
 	print_execution "mv gamemode-$release gamemode"
-	print_execution "ls $HOME/work/gamemode/gamemode/"
 fi
 
 # Building gamemode
