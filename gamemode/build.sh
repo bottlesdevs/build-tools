@@ -60,8 +60,3 @@ print_execution "cd $HOME/work/gamemode/gamemode-build"
 print_execution "mkdir -p $HOME/work/gamemode/gamemode-build/dist"
 print_execution "export TRAVIS=true"
 print_execution "./bootstrap.sh --prefix $HOME/work/gamemode/gamemode-build/dist"
-
-# Creating version file
-# ---------------------------------------
-title "Creating version file"
-print_execution "echo $release > VERSION"
