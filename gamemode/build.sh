@@ -56,6 +56,7 @@ fi
 # ---------------------------------------
 title "Building gamemode"
 print_execution "cd $HOME/work/gamemode/gamemode"
+print_execution "ls"
 print_execution "mkdir -p $HOME/work/gamemode/gamemode/dist"
 print_execution "export TRAVIS=true"
 print_execution "./bootstrap.sh --prefix $HOME/work/gamemode/gamemode/dist"
