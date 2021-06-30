@@ -14,6 +14,13 @@ black="\e[30m"
 bold="\e[1m"
 reset="\e[0m"
 
+while getopts r: option
+do
+	case "${option}" in
+		r) release=${OPTARG};;
+	esac
+done
+
 function title {
 	PREFIX="\n$bold-----"
 	SUFFIX="--$reset"
@@ -28,17 +35,10 @@ function print_execution {
 	fi
 }
 
-# Determining gamemode version
-# ---------------------------------------
-title "Determining gamemode version"
-print_execution "cd $HOME/work/gamemode/gamemode-build/dist"
-gm_version=$(cat VERSION)
-print_execution "echo Gamemode version is: $gm_version"
-
 # Package gamemode build
 # ---------------------------------------
 title "Package gamemode build"
-print_execution "mv $HOME/work/gamemode/gamemode-build/dist $HOME/work/gamemode/gamemode-${gm_version}"
-archive_name="gamemode-${gm_version}.tar.gz"
-print_execution "tar zcvf ${archive_name} gamemode-${gm_version}"
+print_execution "mv $HOME/work/gamemode/gamemode-build/dist $HOME/work/gamemode/gamemode-${release}"
+archive_name="gamemode-${release}.tar.gz"
+print_execution "tar zcvf ${archive_name} gamemode-${release}"
 print_execution "ls gamemode*.tar.gz"
