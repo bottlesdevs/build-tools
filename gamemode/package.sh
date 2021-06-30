@@ -31,20 +31,20 @@ function print_execution {
 # Preparing tarball
 # ---------------------------------------
 title "Preparing tarball"
-print_execution "cd $HOME/work/gamemode/dist"
+print_execution "cd $HOME/work/gamemode/gamemode/dist"
 print_execution "rsync -avh winebuild_64/* winebuild"
 
 # Determining gamemode version
 # ---------------------------------------
 title "Determining gamemode version"
-print_execution "cd $HOME/work/gamemode/dist"
+print_execution "cd $HOME/work/gamemode/gamemode/dist"
 gm_version=$(cat VERSION)
 print_execution "echo Gamemode version is: $gm_version"
 
 # Package gamemode build
 # ---------------------------------------
 title "Package gamemode build"
-print_execution "mv $HOME/work/gamemode/dist $HOME/work/gamemode/gamemode-${gm_version}"
+print_execution "mv $HOME/work/gamemode/gamemode/dist $HOME/work/gamemode/gamemode-${gm_version}"
 archive_name="gamemode-${gm_version}.tar.gz"
 print_execution "tar zcvf ${archive_name} gamemode-${gm_version}"
 print_execution "ls gamemode*.tar.gz"
