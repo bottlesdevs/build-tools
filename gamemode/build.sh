@@ -50,13 +50,13 @@ else
 	print_execution "tar zxvf gamemode.tar.gz"
 	print_execution "rm gamemode.tar.gz"
 	print_execution "mv gamemode-$release gamemode"
+	print_execution "ls"
 fi
 
 # Building gamemode
 # ---------------------------------------
 title "Building gamemode"
 print_execution "cd $HOME/work/gamemode/gamemode"
-print_execution "ls"
 print_execution "mkdir -p $HOME/work/gamemode/gamemode/dist"
 print_execution "export TRAVIS=true"
 print_execution "./bootstrap.sh --prefix $HOME/work/gamemode/gamemode/dist"
