@@ -56,7 +56,7 @@ fi
 # ---------------------------------------
 title "Building gamemode"
 print_execution "cd $HOME/work/gamemode/gamemode"
-print_execution "TRAVIS=true ./bootstrap.sh --prefix $HOME/work/gamemode/dist"
+print_execution "TRAVIS=true ./bootstrap.sh --prefix $HOME/work/gamemode/gamemode/dist"
 
 # Creating version file
 # ---------------------------------------
