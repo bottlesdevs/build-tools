@@ -28,12 +28,6 @@ function print_execution {
 	fi
 }
 
-# Preparing tarball
-# ---------------------------------------
-title "Preparing tarball"
-print_execution "cd $HOME/work/gamemode/gamemode-build/dist"
-print_execution "rsync -avh winebuild_64/* winebuild"
-
 # Determining gamemode version
 # ---------------------------------------
 title "Determining gamemode version"
