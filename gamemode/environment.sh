@@ -37,8 +37,9 @@ print_execution "mkdir -p $HOME/work"
 # ---------------------------------------
 title "Enabling i386 architecture"
 print_execution "sudo dpkg --add-architecture i386"
+print_execution "sudo apt update"
 
 # Installing dependencies
 # ---------------------------------------
 title "Installing dependencies"
-print_execution "sudo apt update && sudo apt install -y meson libsystemd-dev pkg-config ninja-build git libdbus-1-dev libinih-dev build-essential"
+print_execution "sudo apt install -y meson libsystemd-dev pkg-config ninja-build git libdbus-1-dev libinih-dev build-essential"
