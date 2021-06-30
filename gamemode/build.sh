@@ -44,21 +44,22 @@ if [[ -z ${release+x} ]]
 then
 	print_execution "echo No release declared, fallback to git"
 	print_execution "git clone https://github.com/FeralInteractive/gamemode.git"
+	print_execution "mv gamemode gamemode-build"
 else
 	print_execution "echo Requested the $release release"
 	print_execution "wget -O gamemode.tar.gz  https://github.com/FeralInteractive/gamemode/archive/$release.tar.gz"
 	print_execution "tar zxvf gamemode.tar.gz"
 	print_execution "rm gamemode.tar.gz"
-	print_execution "mv gamemode-$release gamemode"
+	print_execution "mv gamemode-$release gamemode-build"
 fi
 
 # Building gamemode
 # ---------------------------------------
 title "Building gamemode"
-print_execution "cd $HOME/work/gamemode/gamemode"
-print_execution "mkdir -p $HOME/work/gamemode/gamemode/dist"
+print_execution "cd $HOME/work/gamemode/gamemode-build"
+print_execution "mkdir -p $HOME/work/gamemode/gamemode-build/dist"
 print_execution "export TRAVIS=true"
-print_execution "./bootstrap.sh --prefix $HOME/work/gamemode/gamemode/dist"
+print_execution "./bootstrap.sh --prefix $HOME/work/gamemode/gamemode-build/dist"
 
 # Creating version file
 # ---------------------------------------
