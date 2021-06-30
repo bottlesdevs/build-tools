@@ -38,7 +38,7 @@ function print_execution {
 # Cloning source code
 # ---------------------------------------
 title "Cloning source code"
-print_execution "cd $HOME/work"
+print_execution "cd $HOME/work/gamemode"
 
 if [[ -z ${release+x} ]]
 then
@@ -55,7 +55,7 @@ fi
 # Building gamemode
 # ---------------------------------------
 title "Building gamemode"
-print_execution "cd $HOME/work/gamemode"
+print_execution "cd $HOME/work/gamemode/gamemode"
 print_execution "TRAVIS=true ./bootstrap.sh --prefix $HOME/work/gamemode/dist"
 
 # Creating version file
