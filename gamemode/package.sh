@@ -40,5 +40,6 @@ function print_execution {
 title "Package gamemode build"
 print_execution "mv $HOME/work/gamemode/gamemode-build/dist $HOME/work/gamemode/gamemode-${release}"
 archive_name="gamemode-${release}.tar.gz"
+print_execution "cd $HOME/work/gamemode"
 print_execution "tar zcvf ${archive_name} gamemode-${release}"
 print_execution "ls gamemode*.tar.gz"
