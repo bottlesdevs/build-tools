@@ -17,6 +17,7 @@ cd build-tools
 
 ## Steps
 - `./environment.sh`
+- `./fetch.sh -r [version] (e.g. -r 6.0)`
 - `./patch-josh-flat-theme.sh` (optional)
 - `./patch-staging.sh -r [version] (e.g. -r 6.0)` (optional)
 - `./build-tools.sh`
