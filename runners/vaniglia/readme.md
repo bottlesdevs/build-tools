@@ -1,5 +1,5 @@
-# Chardonnay build
-Chardonnay is a Wine build that supports both 64 and 32 Bit and includes Staging patches.
+# Vaniglia build
+Vaniglia is a Wine build that supports both 64 and 32 Bit and includes Staging patches.
 
 ## System requirements
 - Ubuntu LTS
@@ -24,7 +24,7 @@ cd build-tools
 - `./build32.sh`
 - `./package.sh`
 
-## Chardonnay recipe
-The chardonnay runner is a 64bit build with 32bit compatibility and the following patches:
+## Vaniglia recipe
+The vaniglia runner is a 64bit build with 32bit compatibility and the following patches:
 - josh flat theme patch
 - staging patch
