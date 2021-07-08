@@ -52,6 +52,6 @@ then
 	fi
 else
 	print_execution "echo Requested the $release release"
-	print_execution "wget -O wine.tar.gz https://github.com/wine-mirror/wine/archive/refs/tags/wine-${wine_version}.tar.gz"
+	print_execution "wget -O wine.tar.gz https://github.com/wine-mirror/wine/archive/refs/tags/wine-${release}.tar.gz"
 	print_execution "tar -zxvf wine.tar.gz"
 fi
