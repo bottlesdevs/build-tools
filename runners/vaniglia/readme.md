@@ -6,6 +6,7 @@ Vaniglia is a Wine build that supports both 64 and 32 Bit and includes Staging p
 
 ### Tested
 - Ubuntu 18.04 LTS
+- Ubuntu 20.04 LTS
 
 ## Preparation
 ```bash
