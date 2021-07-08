@@ -39,7 +39,7 @@ function print_execution {
 # Fetch Wine source code
 # ---------------------------------------
 title "Fetch Wine source code"
-print_execution "cd $HOME/work/wine/wine"
+print_execution "cd $HOME/work/wine"
 
 if [[ -z ${release+x} ]]
 then
@@ -54,5 +54,5 @@ else
 	print_execution "echo Requested the $release release"
 	print_execution "wget -O wine_source.tar.gz https://github.com/wine-mirror/wine/archive/refs/tags/wine-${release}.tar.gz"
 	print_execution "tar -zxvf wine_source.tar.gz"
-	print_execution "mv wine_source/wine-wine-${release} wine"
+	print_execution "mv $HOME/work/wine/wine-wine-${release}/* wine"
 fi
