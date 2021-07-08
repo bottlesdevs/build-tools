@@ -39,12 +39,12 @@ function print_execution {
 # Fetch Wine source code
 # ---------------------------------------
 title "Fetch Wine source code"
-print_execution "cd $HOME/work"
+print_execution "cd $HOME/work/wine/wine"
 if [[ -z ${release+x} ]]
 then
   print_execution "echo No release declared, fallback on git"
   if test -d "$HOME/work/wine/.git"; then
-    print_execution "cd $HOME/work/wine"
+    print_execution "cd $HOME/work/wine/wine"
     print_execution "git pull"
   else
     print_execution "git clone https://github.com/bottlesdevs/wine.git"
