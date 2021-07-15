@@ -42,6 +42,36 @@ title "Merging wine builds"
 print_execution "cd $HOME/work/wine/wine"
 print_execution "rsync -avh winebuild_64/* winebuild"
 
+# Strip unneeded files
+# ---------------------------------------
+title "Strip unneeded files"
+print_execution "cd $HOME/work/wine/wine/winebuild"
+print_execution "find . -type f -exec strip {} \;"
+for file in {bin, lib, lib64}/{wine/*,*}; do
+    if [[ "$_f" = *.so ]] || [[ "$file" = *.dll ]]; then
+        print_execution "strip --strip-unneeded ${file} || true"
+    fi
+done
+for file in {bin, lib, lib64}/{wine/{x86_64-unix, x86_64-windows, i386-unix, i386-windows}/*,*}; do
+    if [[ "$file" = *.so ]] || [[ "$file" = *.dll ]]; then
+        print_execution "strip --strip-unneeded ${file} || true"
+    fi
+done
+
+# Include runtime libraries
+# ---------------------------------------
+title "Include runtime libraries"
+print_execution "cd $HOME/work/wine/wine/winebuild"
+print_execution "mkdir -p lib64"
+print_execution "cp -R /lib32/* lib/"
+print_execution "cp -R /lib64/* lib64/"
+
+# Remove include directory
+# ---------------------------------------
+title "Remov include directory"
+print_execution "cd $HOME/work/wine/wine/winebuild"
+print_execution "rm -rf include"
+
 # Determining the Wine version
 # ---------------------------------------
 title "Determining the Wine version"
