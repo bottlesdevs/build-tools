@@ -46,7 +46,7 @@ print_execution "rsync -avh winebuild_64/* winebuild"
 # ---------------------------------------
 title "Strip unneeded files"
 print_execution "cd $HOME/work/wine/wine/winebuild"
-print_execution "find . -type f -exec strip {} \;"
+print_execution "find . -type f -exec strip '{}' \;"
 for file in {bin, lib, lib64}/{wine/*,*}; do
     if [[ "$_f" = *.so ]] || [[ "$file" = *.dll ]]; then
         print_execution "strip --strip-unneeded ${file} || true"
