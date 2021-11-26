@@ -76,7 +76,7 @@ gstreamer1.0-x:i386 gstreamer1.0-alsa:i386 gstreamer1.0-gl:i386 gstreamer1.0-gtk
 gstreamer1.0-pulseaudio:i386 libcupsimage2-dev:i386 libgdk-pixbuf2.0-dev:i386 libtiff-dev:i386 libpango1.0-dev:i386"
 
 title "APT fix"
-print_execution "sudo apt install -f"
+print_execution "sudo apt install -f -y"
 
 # Installing amd64 dependencies
 # ---------------------------------------
