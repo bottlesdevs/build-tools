@@ -33,19 +33,6 @@ function print_execution {
 title "Enabling i386 architecture"
 print_execution "sudo dpkg --add-architecture i386"
 
-# Installing aptitude
-# ---------------------------------------
-title "Installing aptitude"
-print_execution "sudo apt install aptitude -y"
-
-# Adding repositories
-# ---------------------------------------
-title "Adding repositories"
-print_execution "sudo apt -y install software-properties-common"
-print_execution "sudo add-apt-repository ppa:cybermax-dexter/vkd3d -y"
-print_execution "sudo add-apt-repository ppa:cybermax-dexter/sdl2-backport -y"
-print_execution "sudo apt-get -qq update"
-
 # Adding repositories
 # ---------------------------------------
 title "Adding repositories"
@@ -56,42 +43,69 @@ print_execution "sudo apt-get -qq update"
 
 # Installing i386 dependencies
 # ---------------------------------------
-title "Installing i386 dependencies"
-print_execution "sudo aptitude install -y libacl1-dev:i386 libasound2-dev:i386 \
-libcups2-dev:i386 libdbus-1-dev:i386 libgcrypt-dev:i386 libgif-dev:i386 libglu1-mesa-dev:i386 libgsm1-dev:i386 \
-liblcms2-dev:i386 libldap2-dev:i386 libmpg123-dev:i386 libncurses5-dev:i386 libopenal-dev:i386 libosmesa6-dev:i386 \
-libpcap-dev:i386 libtiff5-dev:i386 libudev-dev:i386 libv4l-dev:i386 libva-dev:i386 \
-libxslt1-dev:i386 libxt-dev:i386 libvulkan-dev:i386 libgnutls28-dev:i386 \
-libpng-dev:i386 libsdl2-dev:i386 libavcodec-dev:i386 \
-libavutil-dev:i386 libswresample-dev:i386 libswresample3:i386 libavutil56:i386 \
-libvkd3d-dev:i386 libvkd3d-utils1:i386 libvulkan1:i386 \
-xserver-xorg-dev:i386 libfreetype6-dev:i386 gcc-multilib g++-multilib gcc-mingw-w64-i686 \
-mingw-w64-i686-dev gcc-mingw-w64-x86-64 g++-mingw-w64-i686 g++-mingw-w64-x86-64 libvkd3d-shader1:i386 \
-ocl-icd-opencl-dev:i386 linux-libc-dev:i386 vkd3d-demos:i386 \
-libcupsimage2-dev:i386 libtiff-dev:i386 librsvg2-2:i386 \
-libsoxr0:i386 libsdl2-mixer-dev:i386 libglib2.0-0:i386 \
-libibus-1.0-dev:i386 libpulse-dev:i386 libsdl2-mixer-2.0-0:i386 \
-libavcodec58:i386 libmount1:i386 libselinux1:i386 libglib2.0-dev:i386 
-libselinux1-dev:i386 libpcre2-8-0:i386"
+title "Installing dependencies"
+print_execution "sudo aptitude install -y \
+libsdl2-mixer-dev libsdl2-mixer-dev:i386 \
+libsdl2-mixer-2.0-0 libsdl2-mixer-2.0-0:i386 \
+libsoxr0 libsoxr0:i386 \
+libdatrie1 libdatrie1:i386 \
+libwxbase3.0-0v5 libwxbase3.0-0v5:i386 \
+liblua5.2-0 liblua5.2-0:i386 \
+libjbig0 libjbig0:i386 \
+libjpeg-turbo8 libjpeg-turbo8:i386 \
+libfribidi0 libfribidi0:i386 \
+libxslt1.1 libxslt1.1:i386 \
+libtiff5 libtiff5:i386 \
+libmad0 libmad0:i386 \
+libtinfo5 libtinfo5:i386 \
+libmpg123-0 libmpg123-0:i386 \
+libfaad2 libfaad2:i386 \
+libgomp1-i386-cross libgomp1-i386-cross:i386 \
+lib64gomp1-i386-cross lib64gomp1-i386-cross:i386 \
+libx32gomp1-i386-cross libx32gomp1-i386-cross:i386 \
+gcc-snapshot gcc-snapshot:i386 \
+gcc-snapshot gcc-snapshot:i386 \
+libgomp1 libgomp1:i386 \
+lib64gomp1 lib64gomp1:i386 \
+libx32gomp1 libx32gomp1:i386 \
+libaudio2 libaudio2:i386 \
+libmikmod3 libmikmod3:i386 \
+libxslt1.1 libxslt1.1:i386 \
+libsdl2-image-2.0-0 libsdl2-image-2.0-0:i386 \
+libxshmfence1 libxshmfence1:i386 \
+libthai0 libthai0:i386 \
+libsdl-net1.2 libsdl-net1.2:i386 \
+libgcrypt20 libgcrypt20:i386 \
+libsoundtouch1 libsoundtouch1:i386 \
+libportaudio2 libportaudio2:i386 \
+liblua5.1-0 liblua5.1-0:i386 \
+libgif7 libgif7:i386 \
+libatk1.0-0 libatk1.0-0:i386 \
+libsdl-sound1.2 libsdl-sound1.2:i386 \
+libgraphite2-3 libgraphite2-3:i386 \
+libluajit-5.1-2 libluajit-5.1-2:i386 \
+libwebp6 libwebp6:i386 \
+libmodplug1 libmodplug1:i386 \
+libmpeg2-4 libmpeg2-4:i386 \
+libsdl-ttf2.0-0 libsdl-ttf2.0-0:i386 \
+libjansson4 libjansson4:i386 \
+zlib1g zlib1g:i386 \
+lib64z1 lib64z1:i386 \
+libx32z1 libx32z1:i386 \
+libncurses5 libncurses5:i386 \
+libxinerama1 libxinerama1:i386 \
+libzzip-0-13 libzzip-0-13:i386 \
+libfuse2 libfuse2:i386 \
+libgpg-error0 libgpg-error0:i386 \
+libv4lconvert0 libv4lconvert0:i386 \
+libncursesw5 libncursesw5:i386 \
+libmpeg2-4 libmpeg2-4:i386 \
+libfontconfig1 libfontconfig1:i386 \
+libxml2 libxml2:i386 \
+libharfbuzz0b libharfbuzz0b:i386 \
+libaio1 libaio1:i386"
+
 
 title "APT fix"
 print_execution "sudo apt install -f -y"
 
-# Installing amd64 dependencies
-# ---------------------------------------
-title "Installing amd64 dependencies"
-print_execution "sudo aptitude install -y autoconf bison ccache debhelper desktop-file-utils docbook-to-man \
-docbook-utils docbook-xsl flex fontforge gawk gettext libacl1-dev \
-libasound2-dev libdbus-1-dev \
-libgcrypt-dev libgif-dev libglu1-mesa-dev libgsm1-dev \
-liblcms2-dev libldap2-dev libmpg123-dev libncurses5-dev \
-libopenal-dev libosmesa6-dev libpcap-dev \
-libssl-dev libtiff5-dev libudev-dev libv4l-dev libva-dev libxslt1-dev libxt-dev \
-ocl-icd-opencl-dev prelink valgrind linux-libc-dev libppl14 libvulkan-dev libgnutls28-dev \
-libpng-dev libsdl2-dev libavcodec-dev libavutil-dev libswresample-dev libavcodec58 libswresample3 libavutil56 \
-libvkd3d1 libvkd3d-dev libvkd3d-utils1 libvkd3d-shader1 vkd3d-demos libvulkan1 liborc-0.4-dev \
-gcc-mingw-w64 mingw-w64 mingw-w64-common mingw-w64-x86-64-dev mingw-w64-tools \
-libsoxr0 libsdl2-mixer-dev"
-
-title "APT fix"
-print_execution "sudo apt install -f -y"
