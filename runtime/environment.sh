@@ -44,7 +44,7 @@ print_execution "sudo apt-get -qq update"
 # Installing aptitude
 # ---------------------------------------
 title "Installing aptitude"
-print_execution "sudo aptitude install -y aptitude"
+print_execution "sudo apt install -y aptitude"
 
 # Installing i386 dependencies
 # ---------------------------------------
