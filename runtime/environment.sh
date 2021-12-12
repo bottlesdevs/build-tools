@@ -57,7 +57,7 @@ print_execution "sudo apt-get -qq update"
 # Installing i386 dependencies
 # ---------------------------------------
 title "Installing i386 dependencies"
-print_execution "sudo aptitude -y libacl1-dev:i386 libasound2-dev:i386 \
+print_execution "sudo aptitude install -y libacl1-dev:i386 libasound2-dev:i386 \
 libcups2-dev:i386 libdbus-1-dev:i386 libgcrypt-dev:i386 libgif-dev:i386 libglu1-mesa-dev:i386 libgsm1-dev:i386 \
 liblcms2-dev:i386 libldap2-dev:i386 libmpg123-dev:i386 libncurses5-dev:i386 libopenal-dev:i386 libosmesa6-dev:i386 \
 libpcap-dev:i386 libtiff5-dev:i386 libudev-dev:i386 libv4l-dev:i386 libva-dev:i386 \
@@ -80,7 +80,7 @@ print_execution "sudo apt install -f -y"
 # Installing amd64 dependencies
 # ---------------------------------------
 title "Installing amd64 dependencies"
-print_execution "sudo aptitude -y autoconf bison ccache debhelper desktop-file-utils docbook-to-man \
+print_execution "sudo aptitude install -y autoconf bison ccache debhelper desktop-file-utils docbook-to-man \
 docbook-utils docbook-xsl flex fontforge gawk gettext libacl1-dev \
 libasound2-dev libdbus-1-dev \
 libgcrypt-dev libgif-dev libglu1-mesa-dev libgsm1-dev \
