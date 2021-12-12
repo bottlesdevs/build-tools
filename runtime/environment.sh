@@ -65,9 +65,6 @@ libmad0 libmad0:i386 \
 libtinfo5 libtinfo5:i386 \
 libmpg123-0 libmpg123-0:i386 \
 libfaad2 libfaad2:i386 \
-libgomp1-i386-cross libgomp1-i386-cross:i386 \
-lib64gomp1-i386-cross lib64gomp1-i386-cross:i386 \
-libx32gomp1-i386-cross libx32gomp1-i386-cross:i386 \
 gcc-snapshot gcc-snapshot:i386 \
 gcc-snapshot gcc-snapshot:i386 \
 libgomp1 libgomp1:i386 \
