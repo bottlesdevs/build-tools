@@ -62,7 +62,7 @@ libavutil-dev:i386 libswresample-dev:i386 libavcodec58:i386 libswresample3:i386 
 ibvkd3d-dev:i386 libvkd3d-utils1:i386 libvulkan1:i386 \
 xserver-xorg-dev:i386 libfreetype6-dev:i386 gcc-multilib g++-multilib gcc-mingw-w64-i686 \
 mingw-w64-i686-dev gcc-mingw-w64-x86-64 g++-mingw-w64-i686 g++-mingw-w64-x86-64 libvkd3d-shader1:i386 \
-ocl-icd-opencl-dev:i386 linux-libc-dev:i386 libvkd3d1:i386 vkd3d-demos:i386 \
+ocl-icd-opencl-dev:i386 linux-libc-dev:i386 vkd3d-demos:i386 \
 libcupsimage2-dev:i386 libtiff-dev:i386 \
 libsoxr0:i386 libsdl2-mixer-dev:i386"
 
