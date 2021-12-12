@@ -47,7 +47,7 @@ title "Installing dependencies"
 print_execution "sudo apt install -o APT::Immediate-Configure=false -y \
 libsdl2-mixer-dev libsdl2-mixer-dev:i386\
 libnih-dbus-dev\
-libsoxr0 libsoxr0:i386\"
+libsoxr0 libsoxr0:i386"
 
 title "APT fix"
 print_execution "sudo apt install -f -y"
