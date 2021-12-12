@@ -55,19 +55,17 @@ title "Installing i386 dependencies"
 print_execution "sudo apt install -o APT::Immediate-Configure=false -y libacl1-dev:i386 libasound2-dev:i386 \
 libcups2-dev:i386 libdbus-1-dev:i386 libgcrypt-dev:i386 libgif-dev:i386 libglu1-mesa-dev:i386 libgsm1-dev:i386 \
 liblcms2-dev:i386 libldap2-dev:i386 libmpg123-dev:i386 libncurses5-dev:i386 libopenal-dev:i386 libosmesa6-dev:i386 \
-libpcap-dev:i386 libtiff5-dev:i386 libudev-dev:i386 libv4l-dev:i386 libva-dev:i386 \
-libxslt1-dev:i386 libxt-dev:i386 libvulkan-dev:i386 libgnutls28-dev:i386 \
-libpng-dev:i386 libsdl2-dev:i386 libavcodec-dev:i386 \
-libavutil-dev:i386 libswresample-dev:i386 libswresample3:i386 libavutil56:i386 \
-libvkd3d-dev:i386 libvkd3d-utils1:i386 libvulkan1:i386 \
+libpcap-dev:i386 libpulse-dev:i386 libtiff5-dev:i386 libudev-dev:i386 libv4l-dev:i386 libva-dev:i386 \
+libxslt1-dev:i386 libxt-dev:i386 libcolord2:i386 libvulkan-dev:i386 libgnutls28-dev:i386 \
+libgstreamer-plugins-base1.0-dev:i386 libgstreamer1.0-dev:i386 libpng-dev:i386 libsdl2-dev:i386 libavcodec-dev:i386 \
+libavutil-dev:i386 libswresample-dev:i386 libavcodec58:i386 libswresample3:i386 libavutil56:i386 libfaudio0:i386 \
+libfaudio-dev:i386 libvkd3d-dev:i386 libvkd3d-utils1:i386 libvulkan1:i386 libgstreamer1.0-0:i386 gstreamer1.0-libav:i386 \
 xserver-xorg-dev:i386 libfreetype6-dev:i386 gcc-multilib g++-multilib gcc-mingw-w64-i686 \
-mingw-w64-i686-dev gcc-mingw-w64-x86-64 g++-mingw-w64-i686 g++-mingw-w64-x86-64 libvkd3d-shader1:i386 \
-ocl-icd-opencl-dev:i386 linux-libc-dev:i386 vkd3d-demos:i386 \
-libcupsimage2-dev:i386 libtiff-dev:i386 librsvg2-2:i386 \
-libsoxr0:i386 libsdl2-mixer-dev:i386 libglib2.0-0:i386 \
-libibus-1.0-dev:i386 libpulse-dev:i386 libsdl2-mixer-2.0-0:i386 \
-libavcodec58:i386 libmount1:i386 libselinux1:i386 libglib2.0-dev:i386 
-libselinux1-dev:i386 libpcre2-8-0:i386"
+mingw-w64-i686-dev gcc-mingw-w64-x86-64 g++-mingw-w64-i686 g++-mingw-w64-x86-64 libvkd3d-shader1:i386 libgtk-3-dev:i386 \
+ocl-icd-opencl-dev:i386 linux-libc-dev:i386 libvkd3d1:i386 vkd3d-demos:i386 gstreamer1.0-tools:i386 \
+gstreamer1.0-x:i386 gstreamer1.0-alsa:i386 gstreamer1.0-gl:i386 gstreamer1.0-gtk3:i386 \
+gstreamer1.0-pulseaudio:i386 libcupsimage2-dev:i386 libgdk-pixbuf2.0-dev:i386 libtiff-dev:i386 libpango1.0-dev:i386 \
+libsoxr0:i386 libsdl2-mixer-dev:i386"
 
 title "APT fix"
 print_execution "sudo apt install -f -y"
@@ -78,15 +76,20 @@ title "Installing amd64 dependencies"
 print_execution "sudo apt install -y autoconf bison ccache debhelper desktop-file-utils docbook-to-man \
 docbook-utils docbook-xsl flex fontforge gawk gettext libacl1-dev \
 libasound2-dev libdbus-1-dev \
-libgcrypt-dev libgif-dev libglu1-mesa-dev libgsm1-dev \
+libgcrypt-dev libgif-dev libglu1-mesa-dev libgsm1-dev libgtk-3-dev \
 liblcms2-dev libldap2-dev libmpg123-dev libncurses5-dev \
-libopenal-dev libosmesa6-dev libpcap-dev \
+libopenal-dev libosmesa6-dev libpcap-dev libpulse-dev \
 libssl-dev libtiff5-dev libudev-dev libv4l-dev libva-dev libxslt1-dev libxt-dev \
-ocl-icd-opencl-dev prelink valgrind linux-libc-dev libppl14 libvulkan-dev libgnutls28-dev \
-libpng-dev libsdl2-dev libavcodec-dev libavutil-dev libswresample-dev libavcodec58 libswresample3 libavutil56 \
-libvkd3d1 libvkd3d-dev libvkd3d-utils1 libvkd3d-shader1 vkd3d-demos libvulkan1 liborc-0.4-dev \
-gcc-mingw-w64 mingw-w64 mingw-w64-common mingw-w64-x86-64-dev mingw-w64-tools \
-libsoxr0 libsdl2-mixer-dev"
+ocl-icd-opencl-dev prelink valgrind linux-libc-dev libppl14 libcolord2 libvulkan-dev \
+libgnutls28-dev libgstreamer-plugins-base1.0-dev libgstreamer1.0-dev \
+libpng-dev libsdl2-dev libavcodec-dev \
+libavutil-dev libswresample-dev libavcodec58 libswresample3 libavutil56 libfaudio0 libfaudio-dev \
+libvkd3d1 libvkd3d-dev libvkd3d-utils1 libvkd3d-shader1 vkd3d-demos libvulkan1 \
+libgstreamer1.0-0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad \
+gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-doc gstreamer1.0-tools gstreamer1.0-x \
+gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-qt5 gstreamer1.0-pulseaudio liborc-0.4-dev \
+gcc-mingw-w64 mingw-w64 mingw-w64-common mingw-w64-x86-64-dev mingw-w64-tools libpango1.0-dev \
+libsoxr0 libnih-dbus-dev libsdl2-mixer-dev"
 
 title "APT fix"
 print_execution "sudo apt install -f -y"
