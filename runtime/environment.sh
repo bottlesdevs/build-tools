@@ -66,7 +66,8 @@ ocl-icd-opencl-dev:i386 linux-libc-dev:i386 vkd3d-demos:i386 \
 libcupsimage2-dev:i386 libtiff-dev:i386 librsvg2-2:i386 \
 libsoxr0:i386 libsdl2-mixer-dev:i386 libglib2.0-0:i386 \
 libibus-1.0-dev:i386 libpulse-dev:i386 libsdl2-mixer-2.0-0:i386 \
-libavcodec58:i386 libmount1:i386 libselinux1:i386 libglib2.0-dev:i386"
+libavcodec58:i386 libmount1:i386 libselinux1:i386 libglib2.0-dev:i386 
+libselinux1-dev:i386 libpcre2-8-0:i386"
 
 title "APT fix"
 print_execution "sudo apt install -f -y"
