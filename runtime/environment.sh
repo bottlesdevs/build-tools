@@ -65,11 +65,7 @@ libmad0 libmad0:i386 \
 libtinfo5 libtinfo5:i386 \
 libmpg123-0 libmpg123-0:i386 \
 libfaad2 libfaad2:i386 \
-gcc-snapshot gcc-snapshot:i386 \
-gcc-snapshot gcc-snapshot:i386 \
 libgomp1 libgomp1:i386 \
-lib64gomp1 lib64gomp1:i386 \
-libx32gomp1 libx32gomp1:i386 \
 libaudio2 libaudio2:i386 \
 libmikmod3 libmikmod3:i386 \
 libxslt1.1 libxslt1.1:i386 \
@@ -92,8 +88,6 @@ libmpeg2-4 libmpeg2-4:i386 \
 libsdl-ttf2.0-0 libsdl-ttf2.0-0:i386 \
 libjansson4 libjansson4:i386 \
 zlib1g zlib1g:i386 \
-lib64z1 lib64z1:i386 \
-libx32z1 libx32z1:i386 \
 libncurses5 libncurses5:i386 \
 libxinerama1 libxinerama1:i386 \
 libzzip-0-13 libzzip-0-13:i386 \
@@ -105,7 +99,8 @@ libmpeg2-4 libmpeg2-4:i386 \
 libfontconfig1 libfontconfig1:i386 \
 libxml2 libxml2:i386 \
 libharfbuzz0b libharfbuzz0b:i386 \
-libaio1 libaio1:i386"
+libaio1 libaio1:i386 \
+
 
 
 title "APT fix"
