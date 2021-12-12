@@ -43,7 +43,6 @@ def build_runtime(recipe):
 		_res = search_library(lib, '32')
 		if _res:
 			lib32.append(_res)
-			break
 		else:
 			missed.append(lib)
 	
@@ -51,7 +50,6 @@ def build_runtime(recipe):
 		_res = search_library(lib, '64')
 		if _res:
 			lib64.append(_res)
-			break
 		else:
 			missed.append(lib)
 	
