@@ -64,7 +64,7 @@ xserver-xorg-dev:i386 libfreetype6-dev:i386 gcc-multilib g++-multilib gcc-mingw-
 mingw-w64-i686-dev gcc-mingw-w64-x86-64 g++-mingw-w64-i686 g++-mingw-w64-x86-64 libvkd3d-shader1:i386 libgtk-3-dev:i386 \
 ocl-icd-opencl-dev:i386 linux-libc-dev:i386 libvkd3d1:i386 vkd3d-demos:i386 gstreamer1.0-tools:i386 \
 gstreamer1.0-x:i386 gstreamer1.0-alsa:i386 gstreamer1.0-gl:i386 gstreamer1.0-gtk3:i386 \
-gstreamer1.0-pulseaudio:i386 libcupsimage2-dev:i386 libgdk-pixbuf2.0-dev:i386 libtiff-dev:i386 libpango1.0-dev:i386\
+gstreamer1.0-pulseaudio:i386 libcupsimage2-dev:i386 libgdk-pixbuf2.0-dev:i386 libtiff-dev:i386 libpango1.0-dev:i386 \
 libsoxr0:i386 libsdl2-mixer-dev:i386"
 
 title "APT fix"
@@ -88,7 +88,7 @@ libvkd3d1 libvkd3d-dev libvkd3d-utils1 libvkd3d-shader1 vkd3d-demos libvulkan1 \
 libgstreamer1.0-0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad \
 gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-doc gstreamer1.0-tools gstreamer1.0-x \
 gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-qt5 gstreamer1.0-pulseaudio liborc-0.4-dev \
-gcc-mingw-w64 mingw-w64 mingw-w64-common mingw-w64-x86-64-dev mingw-w64-tools libpango1.0-dev\
+gcc-mingw-w64 mingw-w64 mingw-w64-common mingw-w64-x86-64-dev mingw-w64-tools libpango1.0-dev \
 libsoxr0 libnih-dbus-dev libsdl2-mixer-dev"
 
 title "APT fix"
