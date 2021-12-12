@@ -99,7 +99,7 @@ libmpeg2-4 libmpeg2-4:i386 \
 libfontconfig1 libfontconfig1:i386 \
 libxml2 libxml2:i386 \
 libharfbuzz0b libharfbuzz0b:i386 \
-libaio1 libaio1:i386 \
+libaio1 libaio1:i386"
 
 
 
