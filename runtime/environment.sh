@@ -59,7 +59,7 @@ libpcap-dev:i386 libtiff5-dev:i386 libudev-dev:i386 libv4l-dev:i386 libva-dev:i3
 libxslt1-dev:i386 libxt-dev:i386 libvulkan-dev:i386 libgnutls28-dev:i386 \
 libgstreamer-plugins-base1.0-dev:i386 libpng-dev:i386 libsdl2-dev:i386 libavcodec-dev:i386 \
 libavutil-dev:i386 libswresample-dev:i386 libavcodec58:i386 libswresample3:i386 libavutil56:i386 \
-ibvkd3d-dev:i386 libvkd3d-utils1:i386 libvulkan1:i386 \
+libvkd3d-dev:i386 libvkd3d-utils1:i386 libvulkan1:i386 \
 xserver-xorg-dev:i386 libfreetype6-dev:i386 gcc-multilib g++-multilib gcc-mingw-w64-i686 \
 mingw-w64-i686-dev gcc-mingw-w64-x86-64 g++-mingw-w64-i686 g++-mingw-w64-x86-64 libvkd3d-shader1:i386 \
 ocl-icd-opencl-dev:i386 linux-libc-dev:i386 vkd3d-demos:i386 \
