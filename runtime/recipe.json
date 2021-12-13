@@ -76,12 +76,18 @@
         "libv4lconvert.so.0", 
         "libncursesw.so.5", 
         "libmpeg2convert.so.0", 
-        "libfontconfig.so.1", 
         "libxml2.so.2", 
         "libharfbuzz.so.0", 
         "libphysfs.so.1", 
         "libaio.so.1", 
         "libenet.so.7",
-        "libevdev.so.1"
+        "libevdev.so.1",
+        "libasn1.so.8",
+        "libasyncns.so.0",
+        "libexif.so.12",
+        "libSDL2-2.0.so.0",
+        "libvulkan.so.1",
+        "libwind.so.0",
+        "libwrap.so.0"
 	]
 }
