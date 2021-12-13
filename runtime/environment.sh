@@ -99,15 +99,7 @@ libmpeg2-4 libmpeg2-4:i386 \
 libfontconfig1 libfontconfig1:i386 \
 libxml2 libxml2:i386 \
 libharfbuzz0b libharfbuzz0b:i386 \
-libaio1 libaio1:i386 \
-libasn1-8-heimdal libasn1-8-heimdal:i386 \
-libasyncns0 libasyncns0:i386 \
-libexif12 libexif12:i386 \
-libsdl2-2.0-0 libsdl2-2.0-0:i386 \
-libvkd3d1 libvkd3d1:i386 \
-libvulkan1 libvulkan1:i386 \
-libwind0-heimdal libwind0-heimdal:i386 \
-libwrap0 libwrap0:i386"
+libaio1 libaio1:i386"
 
 
 
