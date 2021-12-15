@@ -39,7 +39,7 @@ function print_execution {
 # ---------------------------------------
 title "Fetching josh flat theme patch"
 print_execution "cd $HOME/work/wine/extra"
-print_execution "wget https://raw.githubusercontent.com/Frogging-Family/wine-tkg-git/cad1a9167f9ecdca5cfb058b4e45f12c80ae9079/wine-tkg-git/wine-tkg-patches/misc/josh-flat-theme.patch"
+print_execution "wget https://github.com/Frogging-Family/wine-tkg-git/blob/b8ca7139d8bd20f69d9ab2be428d6450b5eabf56/wine-tkg-git/wine-tkg-patches/misc/josh-flat-theme.patch"
 
 # Applying josh flat theme patch
 # ---------------------------------------
