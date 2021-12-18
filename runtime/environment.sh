@@ -54,7 +54,6 @@ print_execution "curl -L https://github.com/mirkobrombin/runtimezilla/archive/re
 print_execution "tar -xzf runtimezilla.tar.gz"
 print_execution "rm -f runtimezilla.tar.gz"
 print_execution "mv runtimezilla-$version runtimezilla"
-print_execution "chmod +x runtimezilla/runtimezilla"
 
 # Installing requirements
 # ---------------------------------------

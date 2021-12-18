@@ -31,4 +31,4 @@ function print_execution {
 # Build runtime
 # -------------------------------------------------
 title "Building runtime"
-print_execution "./runtimezilla/runtimezilla --recipe recipe.yml --output $HOME/runtime"
+print_execution "cd runtimezilla && python3 runtimezilla --recipe recipe.yml --output $HOME/runtime"
