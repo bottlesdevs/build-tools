@@ -9,6 +9,7 @@ import subprocess
 
 
 look_ext = ".yml"
+exclude = ["commit ", "author:", "Date:"]
 
 def get_commit():
     try:
@@ -43,6 +44,13 @@ def list_commit_files(commit: str):
 def get_manifest(commit: str):
     files = list_commit_files(commit)
     for file in files:
+        for exc in exclude:
+            if file.startswith(exc):
+                continue
+
+        if file.startswith(" "):
+            continue
+
         if file.endswith(look_ext):
             return file
     return None
