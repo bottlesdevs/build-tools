@@ -1,3 +1,4 @@
 PyYAML==5.4.1
 patool==1.12
 schema==0.7.5
+requests==2.26.0
