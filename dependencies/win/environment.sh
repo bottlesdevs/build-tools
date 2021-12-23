@@ -41,7 +41,7 @@ title "Installing packages"
 print_execution "sudo aptitude install -y \
 python3 \
 python3-pip \
-python3-patool \
+python3-yaml \
 python3-schema \
 patool \
 cabextract \
