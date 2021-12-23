@@ -38,7 +38,7 @@ print_execution "sudo apt install -y aptitude"
 # Installing packages
 # ---------------------------------------
 title "Installing packages"
-print_execution "sudo aptitude install \
+print_execution "sudo aptitude install -y \
 python3 \
 python3-pip \
 python3-virtualenv \
