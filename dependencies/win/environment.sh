@@ -41,7 +41,7 @@ title "Installing packages"
 print_execution "sudo aptitude install -y \
 python3 \
 python3-pip \
-python3-virtualenv \
+python3-venv \
 cabextract \
 p7zip-full"
 
