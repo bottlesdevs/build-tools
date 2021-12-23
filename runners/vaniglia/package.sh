@@ -4,6 +4,8 @@
 # package.sh
 # This script combine winebuild_32 and winebuild_64 files
 # and create a new redistributable package
+# Author: mirkobrombin
+# License: MIT
 # -------------------------------------------------------
 
 # Utilities

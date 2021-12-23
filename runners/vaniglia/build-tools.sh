@@ -3,6 +3,8 @@
 # ---------------------------------------
 # build-tools.sh
 # This script build the wine tools
+# Author: mirkobrombin
+# License: MIT
 # ---------------------------------------
 
 # Utilities

@@ -3,6 +3,8 @@
 # -------------------------------------------------------
 # package.sh
 # This script package the dist file in a tarball
+# Author: mirkobrombin
+# License: MIT
 # -------------------------------------------------------
 
 # Utilities

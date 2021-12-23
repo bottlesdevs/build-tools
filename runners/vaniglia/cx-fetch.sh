@@ -5,6 +5,8 @@
 # This script fetch the wine source code from git or 
 # releases
 # Variant: cx (Crossover Wine)
+# Author: mirkobrombin
+# License: MIT
 # -------------------------------------------------------
 
 # Utilities

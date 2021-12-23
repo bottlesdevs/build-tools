@@ -3,6 +3,8 @@
 # ---------------------------------------
 # patch-josh-flat-theme.sh
 # This script fetch and apply the josh flat theme patch
+# Author: mirkobrombin
+# License: MIT
 # ---------------------------------------
 
 # Utilities

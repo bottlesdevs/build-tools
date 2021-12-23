@@ -30,18 +30,27 @@ function print_execution {
 	fi
 }
 
-# Preparing directories
+# Installing aptitude
 # ---------------------------------------
-title "Preparing directories"
-print_execution "mkdir -p $HOME/work"
+title "Installing aptitude"
+print_execution "sudo apt install -y aptitude"
 
-# Enabling i386 architecture
+# Installing packages
 # ---------------------------------------
-title "Enabling i386 architecture"
-print_execution "sudo dpkg --add-architecture i386"
-print_execution "sudo apt update"
+title "Installing packages"
+print_execution "sudo aptitude install \
+python3 \
+python3-pip \
+python3-virtualenv \
+cabextract \
+p7zip-full"
 
-# Installing dependencies
+# Creating python virtual environment
 # ---------------------------------------
-title "Installing dependencies"
-print_execution "sudo apt install -y meson libsystemd-dev pkg-config ninja-build git libdbus-1-dev libinih-dev build-essential"
+title "Creating python virtual environment"
+print_execution "python3 -m venv venv"
+
+# Installing requirements
+# ---------------------------------------
+title "Installing requirements"
+print_execution "python3 -m pip install -r requirements.txt"

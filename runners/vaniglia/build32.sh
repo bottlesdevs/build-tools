@@ -3,6 +3,8 @@
 # ---------------------------------------
 # build32.sh
 # This script build wine for 32bit
+# Author: mirkobrombin
+# License: MIT
 # ---------------------------------------
 
 # Utilities

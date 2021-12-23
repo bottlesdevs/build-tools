@@ -3,6 +3,8 @@
 # ---------------------------------------
 # patch-staging.sh
 # This script fetch and apply the wine-staging patches
+# Author: mirkobrombin
+# License: MIT
 # ---------------------------------------
 
 # Utilities

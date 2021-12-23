@@ -3,6 +3,8 @@
 # ---------------------------------------
 # build64.sh
 # This script build wine for 64bit
+# Author: mirkobrombin
+# License: MIT
 # ---------------------------------------
 
 # Utilities

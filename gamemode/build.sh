@@ -3,6 +3,8 @@
 # ---------------------------------------
 # build.sh
 # This script build gamemode
+# Author: mirkobrombin
+# License: MIT
 # ---------------------------------------
 
 # Utilities

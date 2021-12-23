@@ -3,6 +3,8 @@
 # ---------------------------------------
 # environment.sh
 # This script configure the build environment
+# Author: mirkobrombin
+# License: MIT
 # ---------------------------------------
 
 # Utilities

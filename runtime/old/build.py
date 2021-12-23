@@ -2,6 +2,8 @@
 # build.py
 # This script build the Bottles runtime
 # this is a set of librarires from Ubuntu latest to ensure compatibility
+# Author: mirkobrombin
+# License: MIT
 # ---------------------------------------
 
 import os

@@ -3,6 +3,8 @@
 # -------------------------------------------------
 # build.sh
 # This script build the runtime using runtimezilla
+# Author: mirkobrombin
+# License: MIT
 # -------------------------------------------------
 
 # Utilities

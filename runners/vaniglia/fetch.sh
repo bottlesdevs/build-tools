@@ -4,6 +4,8 @@
 # fetch.sh
 # This script fetch the wine source code from git or 
 # releases
+# Author: mirkobrombin
+# License: MIT
 # -------------------------------------------------------
 
 # Utilities
