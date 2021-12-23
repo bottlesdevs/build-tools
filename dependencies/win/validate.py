@@ -5,9 +5,7 @@
 # Author: mirkobrombin
 # License: MIT
 # ---------------------------------------
-import yaml
 import argparse
-import requests
 from schema import Schema, And, Use, SchemaError
 
 from utils import get_manifest

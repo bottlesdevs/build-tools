@@ -6,12 +6,10 @@
 # License: MIT
 # ---------------------------------------
 import os
-import yaml
 import uuid
 import shutil
 import hashlib
 import argparse
-import requests
 import subprocess
 from glob import glob
 

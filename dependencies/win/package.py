@@ -5,7 +5,6 @@
 # Author: mirkobrombin
 # License: MIT
 # ---------------------------------------
-import yaml
 import hashlib
 import argparse
 
