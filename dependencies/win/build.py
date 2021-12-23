@@ -32,7 +32,7 @@ class Builder:
     def __init__(self, manifest, keep_build_dir=False):
         self.dependency = Dependency(manifest)
         self.build_dir = f"build__{uuid.uuid4()}"
-        self.artifact_dir = f"artifact__{uuid.uuid4()}"
+        self.artifact_dir = f"__artifacts"
         self.keep_build_dir = keep_build_dir
     
     def create_dirs(self):
