@@ -39,7 +39,7 @@ class Builder:
         print("Creating build directory {}".format(self.build_dir))
         os.makedirs(self.build_dir)
         print("Creating artifact directory {}".format(self.artifact_dir))
-        os.makedirs(self.artifact_dir)
+        os.makedirs(self.artifact_dir, exist_ok=True)
 
     def run_build_command(self):
         print("Building {}".format(self.dependency))
