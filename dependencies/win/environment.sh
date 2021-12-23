@@ -53,4 +53,4 @@ print_execution "python3 -m venv venv"
 # Installing requirements
 # ---------------------------------------
 title "Installing requirements"
-print_execution "python3 -m pip install -r requirements.txt"
+print_execution "source venv/bin/activate && python3 -m pip install -r requirements.txt"
