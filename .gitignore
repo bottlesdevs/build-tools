@@ -1,1 +1,8 @@
-*/runtimezilla
+# Python rules
+**.pyc
+**/__pycache__
+
+# Build stuffs
+**/runtimezilla
+**/output.yml
+**/build__*
