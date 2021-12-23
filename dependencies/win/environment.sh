@@ -33,12 +33,12 @@ function print_execution {
 # Installing aptitude
 # ---------------------------------------
 title "Installing aptitude"
-print_execution "sudo apt install -y aptitude"
+print_execution "apt install -y aptitude"
 
 # Installing packages
 # ---------------------------------------
 title "Installing packages"
-print_execution "sudo aptitude install -y \
+print_execution "aptitude install -y \
 python3 \
 python3-pip \
 python3-yaml \
