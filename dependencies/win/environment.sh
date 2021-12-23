@@ -41,16 +41,8 @@ title "Installing packages"
 print_execution "sudo aptitude install -y \
 python3 \
 python3-pip \
-python3-venv \
+python3-patool \
+python3-schema \
+patool \
 cabextract \
 p7zip-full"
-
-# Creating python virtual environment
-# ---------------------------------------
-title "Creating python virtual environment"
-print_execution "python3 -m venv venv"
-
-# Installing requirements
-# ---------------------------------------
-title "Installing requirements"
-print_execution "source venv/bin/activate && python3 -m pip install -r requirements.txt"
