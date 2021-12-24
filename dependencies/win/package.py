@@ -52,13 +52,14 @@ class Packager:
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Package a Bottles dependency bundle')
+    parser.add_argument('-f', '--file', help='The manifest file to package')
     parser.add_argument('-u', '--url', help='The url of the manifest file to validate')
     parser.add_argument('-a', '--artifactUrl', help='The public accessible url to the artifact')
     parser.add_argument('-o', '--output', help='The output manifest file')
     
     args = parser.parse_args()
 
-    manifest = get_manifest(file=None, url=args.url, plain=True)
+    manifest = get_manifest(file=args.file, url=args.url, plain=True)
     artifact_url = args.artifactUrl
     artifact_md5 = hashlib.md5(manifest.encode('utf-8')).hexdigest()
     output = args.output
