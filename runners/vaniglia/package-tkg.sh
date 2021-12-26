@@ -46,7 +46,7 @@ print_execution "mv wine-tkg-* $HOME/work/wine/wine/caffe"
 # Determining the Wine version
 # ---------------------------------------
 title "Determining the Wine version"
-print_execution "cd $HOME/work/wine"
+print_execution "cd $HOME/work/wine/wine"
 wine_version=$(cat VERSION)
 wine_version=${wine_version:13}
 print_execution "echo Wine version is: $wine_version"
