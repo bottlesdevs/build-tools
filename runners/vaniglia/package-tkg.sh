@@ -40,7 +40,7 @@ function print_execution {
 # Rename build folder
 # ---------------------------------------
 title "Renaming build folder"
-print_execution "cd $HOME/work/wine/wine/winebuild/wine-tkg/wine-tkg/non-makepkg-builds"
+print_execution "cd $HOME/work/wine/wine/winebuild/wine-tkg-git/wine-tkg-git/non-makepkg-builds"
 print_execution "mv wine-tkg-* $HOME/work/wine/wine/caffe"
 
 # Determining the Wine version
