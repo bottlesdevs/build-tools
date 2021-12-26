@@ -45,7 +45,7 @@ print_execution "cp wine-tkg.cfg $HOME/.config/frogminer/wine-tkg.cfg"
 # Set version in wine-tkg.cfg
 # ---------------------------------------
 title "Setting version in wine-tkg.cfg"
-print_execution "$HOME/.config/frogminer"
+print_execution "cd $HOME/.config/frogminer"
 if [[ -z ${release+x} ]]
 then
 	print_execution "echo No release declared, fallback on git"
