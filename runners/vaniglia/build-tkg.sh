@@ -44,5 +44,5 @@ print_execution "git clone https://github.com/Frogging-Family/wine-tkg-git.git"
 # Starting the build
 # ---------------------------------------
 title "Starting the build"
-print_execution "cd $HOME/work/wine/wine/winebuild/wine-tkg-git"
+print_execution "cd $HOME/work/wine/wine/winebuild/wine-tkg-git/wine-tkg-git"
 print_execution "./non-makepkg-build.sh"
