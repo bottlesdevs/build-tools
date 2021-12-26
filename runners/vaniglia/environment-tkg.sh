@@ -90,8 +90,6 @@ libxt-dev:i386 \
 libcolord2:i386 \
 libvulkan-dev:i386 \
 libgnutls28-dev:i386 \
-libgstreamer-plugins-base1.0-dev:i386 \
-libgstreamer1.0-dev:i386 \
 libpng-dev:i386 \
 libsdl2-dev:i386 \
 libavcodec-dev:i386 \
@@ -105,8 +103,6 @@ libfaudio-dev:i386 \
 libvkd3d-dev:i386 \
 libvkd3d-utils1:i386 \
 libvulkan1:i386 \
-libgstreamer1.0-0:i386 \
-gstreamer1.0-libav:i386 \
 xserver-xorg-dev:i386 \
 libfreetype6-dev:i386 \
 gcc-multilib \
@@ -121,16 +117,26 @@ libgtk-3-dev:i386 \
 ocl-icd-opencl-dev:i386 \
 linux-libc-dev:i386 \
 libvkd3d1:i386 \
-gstreamer1.0-plugins-base:i386 \
-vkd3d-demos:i386 gstreamer1.0-tools:i386 \
-gstreamer1.0-x:i386 gstreamer1.0-alsa:i386 \
-gstreamer1.0-gl:i386 \
-gstreamer1.0-gtk3:i386 \
-gstreamer1.0-pulseaudio:i386 \
+vkd3d-demos:i386 \
 libcupsimage2-dev:i386 \
 libgdk-pixbuf2.0-dev:i386 \
 libtiff-dev:i386 \
-libpango1.0-dev:i386"
+libpango1.0-dev:i386 \
+libgstreamer1.0-0:i386 \
+libgstreamer-plugins-base1.0-dev:i386 \
+libgstreamer1.0-dev:i386 \
+gstreamer1.0-plugins-base:i386 \
+gstreamer1.0-plugins-good:i386 \
+gstreamer1.0-plugins-bad:i386 \
+gstreamer1.0-plugins-ugly:i386 \
+gstreamer1.0-libav:i386 \
+gstreamer1.0-tools:i386 \
+gstreamer1.0-x:i386 \
+gstreamer1.0-alsa:i386 \
+gstreamer1.0-gl:i386 \
+gstreamer1.0-gtk3:i386 \
+gstreamer1.0-qt5:i386 \
+gstreamer1.0-pulseaudio:i386"
 
 title "APT fix"
 print_execution "sudo apt install -f -y"
@@ -171,8 +177,6 @@ libppl14 \
 libcolord2 \
 libvulkan-dev \
 libgnutls28-dev \
-libgstreamer-plugins-base1.0-dev \
-libgstreamer1.0-dev \
 libpng-dev \
 libsdl2-dev \
 libavcodec-dev \
@@ -189,6 +193,8 @@ libvkd3d-utils1 \
 libvkd3d-shader1 vkd3d-demos \
 libvulkan1 \
 libgstreamer1.0-0 \
+libgstreamer1.0-dev \
+libgstreamer-plugins-base1.0-dev \
 gstreamer1.0-plugins-base \
 gstreamer1.0-plugins-good \
 gstreamer1.0-plugins-bad \
