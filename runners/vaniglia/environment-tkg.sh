@@ -92,7 +92,6 @@ ocl-icd-opencl-dev:i386 \
 prelink:i386 \
 valgrind:i386 \
 linux-libc-dev:i386 \
-libppl14:i386 \
 libcolord2:i386 \
 libvulkan-dev:i386 \
 libgnutls28-dev:i386 \
