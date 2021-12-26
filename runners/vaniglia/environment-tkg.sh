@@ -121,6 +121,7 @@ libgtk-3-dev:i386 \
 ocl-icd-opencl-dev:i386 \
 linux-libc-dev:i386 \
 libvkd3d1:i386 \
+gstreamer1.0-plugins-base:i386 \
 vkd3d-demos:i386 gstreamer1.0-tools:i386 \
 gstreamer1.0-x:i386 gstreamer1.0-alsa:i386 \
 gstreamer1.0-gl:i386 \
