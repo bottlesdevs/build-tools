@@ -74,4 +74,4 @@ sed -i 's/apt/aptitude/g' deps
 title "Starting the build"
 print_execution "cd $HOME/work/wine/wine/winebuild/wine-tkg-git/wine-tkg-git"
 sed -i 's/distro=""/distro="debuntu"/' customization.cfg
-print_execution "./non-makepkg-build.sh"
+yes|./non-makepkg-build.sh
