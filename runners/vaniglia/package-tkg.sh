@@ -41,7 +41,7 @@ function print_execution {
 # ---------------------------------------
 title "Renaming build folder"
 print_execution "cd $HOME/work/wine/wine/winebuild/wine-tkg/wine-tkg/non-makepkg-builds"
-print_execution "mv wine-tkg-* $HOME/work/caffe"
+print_execution "mv wine-tkg-* $HOME/work/wine/caffe"
 
 # Determining the Wine version
 # ---------------------------------------
@@ -57,11 +57,11 @@ title "Package Wine build"
 if [[ -z ${suffix+x} ]]
 then
 	print_execution "echo No suffix defined."
-	print_execution "mv $HOME/work/wine/wine/winebuild $HOME/work/wine/wine/caffe-${wine_version}-x86_64"
+	print_execution "mv $HOME/work/wine/caffe $HOME/work/wine/caffe-${wine_version}-x86_64"
 	archive_name="caffe-${wine_version}-x86_64.tar.gz"
 	print_execution "tar zcvf ${archive_name} caffe-${wine_version}-x86_64"
 else
-	print_execution "mv $HOME/work/wine/wine/winebuild $HOME/work/wine/wine/caffe-${wine_version}-${suffix}-x86_64"
+	print_execution "mv $HOME/work/wine/caffe $HOME/work/wine/caffe-${wine_version}-${suffix}-x86_64"
 	archive_name="caffe-${wine_version}-${suffix}-x86_64.tar.gz"
 	print_execution "tar zcvf ${archive_name} caffe-${wine_version}-${suffix}-x86_64"
 fi
