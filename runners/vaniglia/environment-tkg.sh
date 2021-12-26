@@ -83,7 +83,6 @@ libpcap-dev:i386 \
 libpulse-dev:i386 \
 libssl-dev:i386 \
 libtiff5-dev:i386 \
-libudev-dev:i386 \
 libv4l-dev:i386 \
 libva-dev:i386 \
 libxslt1-dev:i386 \
