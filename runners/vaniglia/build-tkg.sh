@@ -16,6 +16,13 @@ black="\e[30m"
 bold="\e[1m"
 reset="\e[0m"
 
+while getopts r: option
+do
+	case "${option}" in
+		r) release=${OPTARG};;
+	esac
+done
+
 function title {
 	PREFIX="\n$bold-----"
 	SUFFIX="--$reset"
@@ -34,6 +41,18 @@ function print_execution {
 # ---------------------------------------
 title "Preparing build directory"
 print_execution "cp wine-tkg.cfg $HOME/.config/frogminer/wine-tkg.cfg"
+
+# Set version in wine-tkg.cfg
+# ---------------------------------------
+title "Setting version in wine-tkg.cfg"
+print_execution "$HOME/.config/frogminer"
+if [[ -z ${release+x} ]]
+then
+	print_execution "echo No release declared, fallback on git"
+else
+	sed -i "s/_staging_version=\"\"/_staging_version=\"v$release\"/g" wine-tkg.cfg
+	sed -i "s/_plain_version=\"\"/_plain_version=\"wine-$release\"/g" wine-tkg.cfg
+fi
 
 # Fetching the latest version of wine-tkg
 # ---------------------------------------
