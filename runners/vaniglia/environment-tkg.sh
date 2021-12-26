@@ -138,9 +138,6 @@ gstreamer1.0-gtk3:i386 \
 gstreamer1.0-qt5:i386 \
 gstreamer1.0-pulseaudio:i386"
 
-title "APT fix"
-print_execution "sudo apt install -f -y"
-
 # Installing amd64 dependencies
 # ---------------------------------------
 title "Installing amd64 dependencies"
