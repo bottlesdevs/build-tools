@@ -66,7 +66,7 @@ print_execution "git clone https://github.com/Frogging-Family/wine-tkg-git.git"
 # keep failing to install dependencies.
 # ---------------------------------------
 title "Substituting apt with aptitude"
-print_execution "cd $HOME/work/wine/wine/winebuild/wine-tkg-git/wine-tkg-scripts"
+print_execution "cd $HOME/work/wine/wine/winebuild/wine-tkg-git/wine-tkg-git/wine-tkg-scripts"
 print_execution "sed -i 's/apt/aptitude/g' deps"
 
 # Starting the build
