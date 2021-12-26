@@ -41,8 +41,18 @@ title "Fetching the latest version of wine-tkg"
 print_execution "cd $HOME/work/wine/wine/winebuild"
 print_execution "git clone https://github.com/Frogging-Family/wine-tkg-git.git"
 
+# Substituting apt with aptitude
+# ---------------------------------------
+# Note: This fix a lot of problems with GitHub Actions, as Ubuntu will
+# keep failing to install dependencies.
+# ---------------------------------------
+title "Substituting apt with aptitude"
+print_execution "cd $HOME/work/wine/wine/winebuild/wine-tkg-git/wine-tkg-scripts"
+print_execution "sed -i 's/apt/aptitude/g' deps"
+
 # Starting the build
 # ---------------------------------------
 title "Starting the build"
 print_execution "cd $HOME/work/wine/wine/winebuild/wine-tkg-git/wine-tkg-git"
+sed -i 's/distro=""/distro="debuntu"/' customization.cfg
 print_execution "./non-makepkg-build.sh"
