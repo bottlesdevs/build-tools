@@ -201,11 +201,6 @@ gstreamer1.0-gtk3 \
 gstreamer1.0-qt5 \
 gstreamer1.0-pulseaudio \
 liborc-0.4-dev \
-gcc-mingw-w64 \
-mingw-w64 \
-mingw-w64-common \
-mingw-w64-x86-64-dev \
-mingw-w64-tools \
 libpango1.0-dev \
 git wget"
 
