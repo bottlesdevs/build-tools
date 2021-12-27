@@ -126,11 +126,6 @@ gstreamer1.0-gtk3:i386 \
 gstreamer1.0-qt5:i386 \
 gstreamer1.0-pulseaudio:i386 \
 liborc-0.4-dev:i386 \
-gcc-mingw-w64:i386 \
-mingw-w64:i386 \
-mingw-w64-common:i386 \
-mingw-w64-x86-64-dev:i386 \
-mingw-w64-tools:i386 \
 libpango1.0-dev:i386"
 
 # Installing amd64 dependencies
@@ -202,7 +197,14 @@ gstreamer1.0-qt5 \
 gstreamer1.0-pulseaudio \
 liborc-0.4-dev \
 libpango1.0-dev \
+gcc-mingw-w64 \
+mingw-w64 \
+mingw-w64-common \
+mingw-w64-x86-64-dev \
+mingw-w64-tools \
+libpango1.0-dev \
 git wget"
+
 
 # Configuring GCC
 # ---------------------------------------
