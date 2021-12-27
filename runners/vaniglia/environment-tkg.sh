@@ -43,11 +43,11 @@ print_execution "sudo dpkg --add-architecture i386"
 
 # Adding repositories
 # ---------------------------------------
-title "Adding repositories"
-print_execution "sudo apt -y install software-properties-common"
-print_execution "sudo add-apt-repository ppa:cybermax-dexter/vkd3d -y"
-print_execution "sudo add-apt-repository ppa:cybermax-dexter/sdl2-backport -y"
-print_execution "sudo apt-get -qq update"
+# title "Adding repositories"
+# print_execution "sudo apt -y install software-properties-common"
+# print_execution "sudo add-apt-repository ppa:cybermax-dexter/vkd3d -y"
+# print_execution "sudo add-apt-repository ppa:cybermax-dexter/sdl2-backport -y"
+# print_execution "sudo apt-get -qq update"
 
 # Installing aptitude
 # ---------------------------------------
