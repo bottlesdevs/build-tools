@@ -65,7 +65,7 @@ print_execution "sudo apt install -y aptitude"
 # ---------------------------------------
 title "Installing i386 dependencies"
 print_execution "sudo aptitude install -y \
-libpcre2-8-0=10.34-7:i386 \
+libpcre2-8-0:i386=10.34-7 \
 libacl1-dev:i386 \
 libasound2-dev:i386 \
 libdbus-1-dev:i386 \
