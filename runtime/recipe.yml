@@ -1,6 +1,6 @@
 properties:
   name: Bottles runtime
-  version: 0.4
+  version: 0.5
   description: This is a set of librarires from Ubuntu 20.04 to ensure runners compatibility in Bottles
   author: mirkobrombin
   license: MIT
