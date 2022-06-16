@@ -46,3 +46,13 @@ print_execution "cd $HOME/runtime"
 print_execution "cp -a $HOME/work/runtime/runtime/EasyAntiCheatRuntime EasyAntiCheatRuntime"
 print_execution "cd .."
 print_execution "tar -czvf runtime.tar.gz runtime"
+
+# BE runtime
+# -------------------------------------------------
+# Note: support for manual files addition planned for runtimezilla
+title "Adding BE runtime"
+print_execution "rm $HOME/runtime.tar.gz"
+print_execution "cd $HOME/runtime"
+print_execution "cp -a $HOME/work/runtime/runtime/BattlEye BattlEye"
+print_execution "cd .."
+print_execution "tar -czvf runtime.tar.gz runtime"
