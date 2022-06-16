@@ -35,3 +35,12 @@ function print_execution {
 title "Building runtime"
 print_execution "cd runtimezilla"
 print_execution "python3 runtimezilla --recipe ../recipe.yml --output $HOME/runtime"
+
+
+# EAC runtime
+# -------------------------------------------------
+# Note: support for manual files addition planned for runtimezilla
+title "Adding EAC runtime"
+print_execution "cd $HOME/runtime"
+print_execution "cp -a $HOME/work/runtime/runtime/EasyAntiCheatRuntime EasyAntiCheatRuntime"
+print_execution "tar -czvf runtime.tar.gz runtime"
