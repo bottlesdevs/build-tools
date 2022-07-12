@@ -1,0 +1,89 @@
+From 187351c2447618e5ade5e641dd1c721adb812662 Mon Sep 17 00:00:00 2001
+From: mirkobrombin <send@mirko.pm>
+Date: Tue, 12 Jul 2022 22:13:16 +0200
+Subject: [PATCH] remove some winecfg features
+
+those are already implemented in Bottles
+---
+ programs/winecfg/Makefile.in |  5 +----
+ programs/winecfg/main.c      | 38 ------------------------------------
+ 2 files changed, 1 insertion(+), 42 deletions(-)
+
+diff --git a/programs/winecfg/Makefile.in b/programs/winecfg/Makefile.in
+index f7540a55372..001498c4382 100644
+--- a/programs/winecfg/Makefile.in
++++ b/programs/winecfg/Makefile.in
+@@ -8,13 +8,10 @@ C_SRCS = \
+ 	about.c \
+ 	appdefaults.c \
+ 	audio.c \
+-	drive.c \
+ 	driveui.c \
+-	libraries.c \
+ 	main.c \
+ 	theme.c \
+-	winecfg.c \
+-	x11drvdlg.c
++	winecfg.c
+ 
+ RC_SRCS = winecfg.rc
+ 
+diff --git a/programs/winecfg/main.c b/programs/winecfg/main.c
+index 77b732d6819..8a5aeb6d09d 100644
+--- a/programs/winecfg/main.c
++++ b/programs/winecfg/main.c
+@@ -81,34 +81,6 @@ doPropertySheet (HINSTANCE hInstance, HWND hOwner)
+     psp[pg].lParam = 0;
+     pg++;
+ 
+-    /*
+-     * Fill out the (Libraries) PROPSHEETPAGE data structure 
+-     * for the property sheet
+-     */
+-    psp[pg].dwSize = sizeof (PROPSHEETPAGEW);
+-    psp[pg].dwFlags = PSP_USETITLE;
+-    psp[pg].hInstance = hInstance;
+-    psp[pg].u.pszTemplate = MAKEINTRESOURCEW (IDD_DLLCFG);
+-    psp[pg].u2.pszIcon = NULL;
+-    psp[pg].pfnDlgProc = LibrariesDlgProc;
+-    psp[pg].pszTitle = load_string (IDS_TAB_DLLS);
+-    psp[pg].lParam = 0;
+-    pg++;
+-    
+-    /*
+-     * Fill out the (X11Drv) PROPSHEETPAGE data structure 
+-     * for the property sheet
+-     */
+-    psp[pg].dwSize = sizeof (PROPSHEETPAGEW);
+-    psp[pg].dwFlags = PSP_USETITLE;
+-    psp[pg].hInstance = hInstance;
+-    psp[pg].u.pszTemplate = MAKEINTRESOURCEW (IDD_GRAPHCFG);
+-    psp[pg].u2.pszIcon = NULL;
+-    psp[pg].pfnDlgProc = GraphDlgProc;
+-    psp[pg].pszTitle =  load_string (IDS_TAB_GRAPHICS);
+-    psp[pg].lParam = 0;
+-    pg++;
+-
+     psp[pg].dwSize = sizeof (PROPSHEETPAGEW);
+     psp[pg].dwFlags = PSP_USETITLE;
+     psp[pg].hInstance = hInstance;
+@@ -119,16 +91,6 @@ doPropertySheet (HINSTANCE hInstance, HWND hOwner)
+     psp[pg].lParam = 0;
+     pg++;
+ 
+-    psp[pg].dwSize = sizeof (PROPSHEETPAGEW);
+-    psp[pg].dwFlags = PSP_USETITLE;
+-    psp[pg].hInstance = hInstance;
+-    psp[pg].u.pszTemplate = MAKEINTRESOURCEW (IDD_DRIVECFG);
+-    psp[pg].u2.pszIcon = NULL;
+-    psp[pg].pfnDlgProc = DriveDlgProc;
+-    psp[pg].pszTitle =  load_string (IDS_TAB_DRIVES);
+-    psp[pg].lParam = 0;
+-    pg++;
+-
+     psp[pg].dwSize = sizeof (PROPSHEETPAGEW);
+     psp[pg].dwFlags = PSP_USETITLE;
+     psp[pg].hInstance = hInstance;
+-- 
+2.36.1
+
