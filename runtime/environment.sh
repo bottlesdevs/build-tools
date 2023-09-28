@@ -45,7 +45,7 @@ print_execution "sudo dpkg --add-architecture i386"
 # ---------------------------------------
 title "Installing dependencies"
 print_execution "sudo apt-get -qq update"
-print_execution "sudo apt install -y git aptitude python3 python3-pip python3-venv jq"
+print_execution "sudo apt install -y git aptitude python3 python3-pip python3-venv jq curl tar"
 
 # Installing runtimezilla
 # ---------------------------------------
