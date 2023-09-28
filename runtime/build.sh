@@ -27,29 +27,36 @@ function print_execution {
 		echo -e "$green_bg$bold$black-- $1$reset"
 	else
 		echo -e "$red_bg$bold$black-- Operation failed for: $1$reset"
+  		exit 1
 	fi
 }
+
+# Activate venv
+# ---------------------------------------
+title "Activate venv"
+print_execution "source .venv/bin/activate"
 
 # Build runtime
 # -------------------------------------------------
 title "Building runtime"
 print_execution "cd runtimezilla"
-print_execution "python3 runtimezilla --recipe ../recipe.yml --output $HOME/runtime"
-
+print_execution "python3 runtimezilla --recipe ../recipe.yml --output runtime"
 
 # EAC runtime
 # -------------------------------------------------
 # Note: support for manual files addition planned for runtimezilla
 title "Adding EAC runtime"
-print_execution "rm $HOME/runtime.tar.gz"
-print_execution "cd $HOME/runtime"
-print_execution "cp -a $HOME/work/runtime/runtime/EasyAntiCheatRuntime EasyAntiCheatRuntime"
+print_execution "rm runtime.tar.gz"
+print_execution "cp -a $GITHUB_WORKSPACE/runtime_source/EasyAntiCheatRuntime runtime/EasyAntiCheatRuntime"
 
 # BE runtime
 # -------------------------------------------------
 # Note: support for manual files addition planned for runtimezilla
 title "Adding BE runtime"
-print_execution "cd $HOME/runtime"
-print_execution "cp -a $HOME/work/runtime/runtime/BattlEyeRuntime BattlEyeRuntime"
-print_execution "cd .."
+print_execution "cp -a $GITHUB_WORKSPACE/runtime_source/BattlEyeRuntime runtime/BattlEyeRuntime"
 print_execution "tar -czvf runtime.tar.gz runtime"
+
+# Move archive
+# -------------------------------------------------
+title "Move archive"
+print_execution "mv runtime.tar.gz $GITHUB_WORKSPACE"
