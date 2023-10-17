@@ -27,26 +27,25 @@ function print_execution {
 		echo -e "$green_bg$bold$black-- $1$reset"
 	else
 		echo -e "$red_bg$bold$black-- Operation failed for: $1$reset"
+  		exit 1
 	fi
 }
+
+if [ "$#" -ne 3 ]; then
+	title "Wrong number of arguments: ./environment.sh [runtime_version] [runtime_OS] [runtime_OS_version]"
+	exit 1
+fi
 
 # Enabling i386 architecture
 # ---------------------------------------
 title "Enabling i386 architecture"
 print_execution "sudo dpkg --add-architecture i386"
 
-# Adding repositories
+# Installing dependencies
 # ---------------------------------------
-title "Adding repositories"
-print_execution "sudo apt -y install software-properties-common"
-print_execution "sudo add-apt-repository ppa:cybermax-dexter/vkd3d -y"
-print_execution "sudo add-apt-repository ppa:cybermax-dexter/sdl2-backport -y"
+title "Installing dependencies"
 print_execution "sudo apt-get -qq update"
-
-# Installing aptitude
-# ---------------------------------------
-title "Installing aptitude"
-print_execution "sudo apt install -y aptitude"
+print_execution "sudo apt install -y git aptitude python3 python3-pip python3-venv jq curl tar"
 
 # Installing runtimezilla
 # ---------------------------------------
@@ -57,7 +56,22 @@ print_execution "tar -xzf runtimezilla.tar.gz"
 print_execution "rm -f runtimezilla.tar.gz"
 print_execution "mv runtimezilla-$version runtimezilla"
 
-# Installing requirements
+# Setting up venv
 # ---------------------------------------
-title "Installing requirements"
+title "Setting up venv"
+print_execution "python3 -m venv .venv"
+print_execution "source .venv/bin/activate"
+
+# Installing Python dependencies
+# ---------------------------------------
+title "Installing Python dependencies"
+print_execution "python3 -m pip install yq"
 print_execution "python3 -m pip install -r runtimezilla/requirements.txt"
+
+# Updating recipe.yml
+# ---------------------------------------
+title "Updating recipe.yml"
+print_execution "yq -i -y .properties.version=\"$1\" recipe.yml"
+print_execution "yq -i -y .system.name=\"$2\" recipe.yml"
+print_execution "yq -i -y .system.min_version=\"$3\" recipe.yml"
+print_execution "yq -i -y .system.max_version=\"$3\" recipe.yml"
