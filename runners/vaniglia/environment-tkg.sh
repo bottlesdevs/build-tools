@@ -210,9 +210,9 @@ libpango1.0-dev git wget"
 
 # Configuring GCC
 # ---------------------------------------
-title "Configuring GCC"
-if [ "$CXX" = "g++" ]; then export CXX="g++-5" CC="gcc-5"; fi
+# title "Configuring GCC"
+# if [ "$CXX" = "g++" ]; then export CXX="g++-5" CC="gcc-5"; fi
 
-export LDFLAGS=-m32
-export CXXFLAGS=-m32
-export CFLAGS=-m32
+# export LDFLAGS=-m32
+# export CXXFLAGS=-m32
+# export CFLAGS=-m32
