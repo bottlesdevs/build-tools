@@ -40,6 +40,9 @@ print_execution "mkdir -p $HOME/.config/frogminer"
 # ---------------------------------------
 title "Enabling i386 architecture"
 print_execution "sudo dpkg --add-architecture i386"
+#print_execution "sudo apt update"
+#print_execution "sudo apt dist-upgrade -y"
+#print_execution "sudo apt install -y ia32-libs"
 
 # Adding repositories
 # ---------------------------------------
@@ -90,8 +93,21 @@ libxt-dev:i386 \
 libcolord2:i386 \
 libvulkan-dev:i386 \
 libgnutls28-dev:i386 \
-libgstreamer-plugins-base1.0-dev:i386 \
 libgstreamer1.0-dev:i386 \
+libgstreamer-plugins-base1.0-dev:i386 \
+libgstreamer-plugins-bad1.0-dev:i386 \
+gstreamer1.0-plugins-base:i386 \
+gstreamer1.0-plugins-good:i386 \
+gstreamer1.0-plugins-bad:i386 \
+gstreamer1.0-plugins-ugly:i386 \
+gstreamer1.0-libav:i386 \
+gstreamer1.0-tools:i386 \
+gstreamer1.0-x:i386 \
+gstreamer1.0-alsa:i386 \
+gstreamer1.0-gl:i386 \
+gstreamer1.0-gtk3:i386 \
+gstreamer1.0-qt5:i386 \
+gstreamer1.0-pulseaudio:i386 \
 libpng-dev:i386 \
 libsdl2-dev:i386 \
 libavcodec-dev:i386 \
@@ -121,8 +137,10 @@ libgtk-3-dev:i386 \
 ocl-icd-opencl-dev:i386 \
 linux-libc-dev:i386 \
 libvkd3d1:i386 \
-vkd3d-demos:i386 gstreamer1.0-tools:i386 \
-gstreamer1.0-x:i386 gstreamer1.0-alsa:i386 \
+vkd3d-demos:i386 \
+gstreamer1.0-tools:i386 \
+gstreamer1.0-x:i386 \
+gstreamer1.0-alsa:i386 \
 gstreamer1.0-gl:i386 \
 gstreamer1.0-gtk3:i386 \
 gstreamer1.0-pulseaudio:i386 \
@@ -138,7 +156,7 @@ print_execution "sudo apt install -f -y"
 # ---------------------------------------
 title "Installing amd64 dependencies"
 print_execution "sudo aptitude install -y autoconf bison ccache debhelper desktop-file-utils docbook-to-man \
-docbook-utils docbook-xsl flex fontforge gawk gettext \
+docbook-utils docbook-xsl flex fontforge gawk gettext schedtool git wget fonttools python3-tk \
 libacl1-dev \
 libasound2-dev \
 libdbus-1-dev \
@@ -187,7 +205,9 @@ libvkd3d-dev \
 libvkd3d-utils1 \
 libvkd3d-shader1 vkd3d-demos \
 libvulkan1 \
-libgstreamer1.0-0 \
+libgstreamer1.0-dev \
+libgstreamer-plugins-base1.0-dev \
+libgstreamer-plugins-bad1.0-dev \
 gstreamer1.0-plugins-base \
 gstreamer1.0-plugins-good \
 gstreamer1.0-plugins-bad \
@@ -206,13 +226,15 @@ mingw-w64 \
 mingw-w64-common \
 mingw-w64-x86-64-dev \
 mingw-w64-tools \
-libpango1.0-dev git wget"
+libpango1.0-dev \
+libfreetype6-dev \
+xserver-xorg-dev"
 
 # Configuring GCC
 # ---------------------------------------
-# title "Configuring GCC"
-# if [ "$CXX" = "g++" ]; then export CXX="g++-5" CC="gcc-5"; fi
+#title "Configuring GCC"
+#if [ "$CXX" = "g++" ]; then export CXX="g++-5" CC="gcc-5"; fi
 
-# export LDFLAGS=-m32
-# export CXXFLAGS=-m32
-# export CFLAGS=-m32
+#export LDFLAGS=-m32
+#export CXXFLAGS=-m32
+#export CFLAGS=-m32
